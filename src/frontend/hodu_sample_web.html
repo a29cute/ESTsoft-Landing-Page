@@ -24,6 +24,43 @@
             clip-path: inset(50%);
             white-space: nowrap;
         }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2e9d8;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        article{
+            width: 100%;
+            padding-left: 320px;
+            padding-right: 320px;
+        }
+        section{
+            width: 100%;
+            padding-left: 320px;
+            padding-right: 320px;
+        }
+        .background{
+            background-color: #f2e9d8;
+            display: flex;
+            justify-content: flex-start;
+        }
         .nav_layout{
             display: flex;
             align-items: center;
@@ -37,30 +74,6 @@
             flex-direction: row;
             text-align: center;
             justify-content: center;
-        }
-        section{
-            width: 100%;
-            padding-left: 320px;
-            padding-right: 320px;
-        }
-        header{
-            background-color: #f2e9d8;
-            width: 100%;
-            height: auto;
-            flex-direction: column;
-            align-items: center;
-            box-sizing: border-box;
-            display: flex;
-        }
-        article{
-            width: 100%;
-            padding-left: 320px;
-            padding-right: 320px;
-        }
-        .background{
-            background-color: #f2e9d8;
-            display: flex;
-            justify-content: flex-start;
         }
         .section2_layout{
             padding-left: 0;
@@ -173,7 +186,7 @@
             height: 102px;
             flex-direction: row;
             justify-content:space-between;
-            margin: -100px;
+            margin-top:-100px;
         }
         .section1Align{
             width: 100%;
@@ -265,18 +278,7 @@
             height:520px;
             margin: 48px 0 80px 0; /* 상단 여백: 80px, 우측 여백: 320px, 하단 여백: 68px, 좌측 여백: 320px */
         }
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-        }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
         .text-color-white{
             color: #FFFFFF;
         }
@@ -359,7 +361,7 @@
         @media (min-width: 390px) and (max-width: 798px) {
             section {
                 width: 100%;
-                padding-left: 32px;b
+                padding-left: 32px;
                 padding-right: 32px;
             }
             article{
@@ -492,53 +494,53 @@
 <!-- 로고와 네비게이션, 로고는 상단 왼쪽, 네비게이션은 상단 오른쪽에 배치 -->
 
 <header>
-        <section>
-            <div class ="header_layout">
-                <h1 class="a11y-hidden">HODU</h1>
-                <div class="logo">
-                    <img src="logo.png" class="logo" alt="icon">
-                </div>
-                <div class="nav_layout">
-                    <nav>
-                        <ul>
-                            <li><a href="#home" class="home">Home</a></li>
-                            <li><a href="#about" class="about">About</a></li>
-                            <li><a href="#support" class="support">Support</a></li>
-                        </ul>
-                    </nav>
-                    <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
-                </div>
+    <section>
+        <div class ="header_layout">
+            <h1 class="a11y-hidden">HODU</h1>
+            <div class="logo">
+                <img src="logo.png" class="logo" alt="icon">
             </div>
-        </section>
+            <div class="nav_layout">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="home">Home</a></li>
+                        <li><a href="#about" class="about">About</a></li>
+                        <li><a href="#support" class="support">Support</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
+            </div>
+        </div>
+    </section>
 </header>
 
 <main>
     <!-- 첫 번째 박스고양이 -->
-        <section  class="background">
-            <div class="section1Align">
-                <div class="section1_text_layout">
-                    <h2>
-                        Lorem Ipsum is simply<br>
-                        dummy text of the printing and
-                    </h2>
-                    <h5>
-                        Lorem Ipsum is simply dummy text of the printing and<br>
-                        typesetting industry.<br>
-                        Lorem Ipsum has been the industry's standard dummy text<br>
-                        ever since the 1500s, when an unknown
-                    </h5>
-                    <button type="button" class="downloadButtonMain" onclick="window.location.href='파일주소'">Download</button>
-                </div>
-                <div class="section1_image_layout">
-                    <img src="img_main.png" class="boxCat" alt="section1 고양이">
-                </div>
+    <section  class="background">
+        <div class="section1Align">
+            <div class="section1_text_layout">
+                <h2>
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing and
+                </h2>
+                <h5>
+                    Lorem Ipsum is simply dummy text of the printing and<br>
+                    typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text<br>
+                    ever since the 1500s, when an unknown
+                </h5>
+                <button type="button" class="downloadButtonMain" onclick="window.location.href='파일주소'">Download</button>
             </div>
-        </section>
+            <div class="section1_image_layout">
+                <img src="img_main.png" class="boxCat" alt="section1 고양이">
+            </div>
+        </div>
+    </section>
 
 
     <!-- 왼쪽 사진, 오른쪽 텍스트 -->
-        <section>
-            <div class="section2_layout">
+    <section>
+        <div class="section2_layout">
             <div class="section2Align">
                 <img src="img_0.png" class="section_image" alt="section2 고양이">
                 <div class="section2textAlign">
@@ -553,12 +555,12 @@
                     </h5>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
     <!-- 텍스트 -->
-        <section>
-            <div class="section3_layout">
+    <section>
+        <div class="section3_layout">
             <div class="section3_TextGap">
                 <h2>
                     <span class="text-color-orange">dummy text of the printing and dummy</span>
@@ -568,96 +570,96 @@
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 </h5>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
     <!-- 3x2 배열의 정사각형 사진(총 6개) -->
-        <section class="section4_layout">
-            <img src="img_1.png" class="section_image" alt="1">
-            <img src="img_2.png" class="section_image" alt="2">
-            <img src="img_3.png" class="section_image" alt="3">
-            <img src="img_4.png" class="section_image" alt="4">
-            <img src="img_5.png" class="section_image" alt="5">
-            <img src="img_6.png" class="section_image" alt="6">
-        </section>
+    <section class="section4_layout">
+        <img src="img_1.png" class="section_image" alt="1">
+        <img src="img_2.png" class="section_image" alt="2">
+        <img src="img_3.png" class="section_image" alt="3">
+        <img src="img_4.png" class="section_image" alt="4">
+        <img src="img_5.png" class="section_image" alt="5">
+        <img src="img_6.png" class="section_image" alt="6">
+    </section>
 
     <!-- 텍스트와 더보기 버튼 -->
-        <section>
-                <div class="section5_layout">
-                <h4>
-                    Continue exploring HODU
-                </h4>
-                <button type="button" class="showMoreButton" onclick="showMoreContent()">Show More</button>
-            </div>
-        </section>
+    <section>
+        <div class="section5_layout">
+            <h4>
+                Continue exploring HODU
+            </h4>
+            <button type="button" class="showMoreButton" onclick="showMoreContent()">Show More</button>
+        </div>
+    </section>
 
     <!-- 찾아오는 길 -->
-        <section>
-            <div class="section6_layout">
-                <div class="section6textAlign">
-                    <h3>
-                        Where you'll be
-                    </h3>
-                    <h5>
-                        330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
-                    </h5>
-                </div>
-                <div id="map">
-                    <script type="text/javascript"
-                            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=62aad78a52b696dbcd1c11a64a1a7615">
-                    </script>
-                    <script>
-                        var container = document.getElementById('map');
-                        var options = {
-                            center: new kakao.maps.LatLng(33.450701, 126.570667),
-                            level: 3
-                        };
-
-                        var map = new kakao.maps.Map(container, options);
-                    </script>
-                </div>
+    <section>
+        <div class="section6_layout">
+            <div class="section6textAlign">
+                <h3>
+                    Where you'll be
+                </h3>
+                <h5>
+                    330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+                </h5>
             </div>
-        </section>
+            <div id="map">
+                <script type="text/javascript"
+                        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=62aad78a52b696dbcd1c11a64a1a7615">
+                </script>
+                <script>
+                    var container = document.getElementById('map');
+                    var options = {
+                        center: new kakao.maps.LatLng(33.450701, 126.570667),
+                        level: 3
+                    };
+
+                    var map = new kakao.maps.Map(container, options);
+                </script>
+            </div>
+        </div>
+    </section>
     <!-- 구독하기 -->
-        <article>
-            <div class="form_border">
-                <div class="section7_text_layout">
-                    <h3><span class="text-color-white">Subscribe to our Blog post</span></h3>
-                    <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                        Lorem Ipsum has been the industry's standard dummy text
-                    </h6>
-                </div>
-                <div class="section7_form_layout">
-                    <form class="form-container" onsubmit="return validateEmail();">
-                        <label for="emailInput" class="a11y-hidden">input mail for subscribe</label>
-                        <input type="email" id="emailInput" placeholder="Enter your e-mail address" required>
-
-                    </form>
-                    <button type="submit" class="subscribeButton">Subscribe</button>
-
-                </div>
+    <article>
+        <div class="form_border">
+            <div class="section7_text_layout">
+                <h3><span class="text-color-white">Subscribe to our Blog post</span></h3>
+                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text
+                </h6>
             </div>
-        </article>
- </main>
+            <div class="section7_form_layout">
+                <form class="form-container" onsubmit="return validateEmail();">
+                    <label for="emailInput" class="a11y-hidden">input mail for subscribe</label>
+                    <input type="email" id="emailInput" placeholder="Enter your e-mail address" required>
+
+                </form>
+                <button type="submit" class="subscribeButton">Subscribe</button>
+
+            </div>
+        </div>
+    </article>
+</main>
 
 <footer class="footer_background">
-        <section>
-            <div class="footer_layout">
-                <div class="logo">
-                    <img src="logo.png" class="logo" alt="icon">
-                </div>
-                <div class="footer_nav_layout">
-                    <nav>
-                        <ul>
-                            <li><img src="icon-blog.png" class="icon_blog" alt="icon"></li>
-                            <li><img src="icon-insta.png" class="icon_insta" alt="icon"></li>
-                            <li><img src="icon-facebook.png" class="icon_facebook" alt="icon"></li>
-                            <li><img src="icon-youtube.png" class="icon_youtube" alt="icon"></li>
-                        </ul>
-                    </nav>
-                </div>
+    <section>
+        <div class="footer_layout">
+            <div class="logo">
+                <img src="logo.png" class="logo" alt="icon">
             </div>
-        </section>
+            <div class="footer_nav_layout">
+                <nav>
+                    <ul>
+                        <li><img src="icon-blog.png" class="icon_blog" alt="icon"></li>
+                        <li><img src="icon-insta.png" class="icon_insta" alt="icon"></li>
+                        <li><img src="icon-facebook.png" class="icon_facebook" alt="icon"></li>
+                        <li><img src="icon-youtube.png" class="icon_youtube" alt="icon"></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
 </footer>
 </body>
 <script src="subscribe.js"></script>
