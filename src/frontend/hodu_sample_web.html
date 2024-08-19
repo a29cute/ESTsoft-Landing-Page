@@ -179,14 +179,14 @@
         }
         .footer_layout{
             width: 100%;
-            box-sizing: border-box;
-            align-items: center;
+            /*box-sizing: border-box;*/
+            /*align-items: center;*/
             flex: 1;
             display: flex;
-            height: 102px;
+            /*height: 102px;*/
             flex-direction: row;
             justify-content:space-between;
-            margin-top:-100px;
+            /*margin-top:-100px;*/
         }
         .section1Align{
             width: 100%;
@@ -378,8 +378,33 @@
         .custom_markercontrol span {display:flex;width:40px;height:100%;text-align:center;cursor:pointer;justify-content:center;align-items: center}
         .custom_markercontrol {position:absolute;top:200px;right:10px;width:40px;height:40px;overflow:hidden;z-index:1;background-color:#f5f5f5;}
 
+        .footer_nav_mobile{
+            display: none;
+        }
+
+
 
         @media (min-width: 390px) and (max-width: 798px) {
+
+            .footer_wrap{
+                display: flex;
+                flex-direction: row;
+            }
+            .footer_layout_mobile{
+                padding-top: 30px;
+                width: 100%;
+                box-sizing: border-box;
+                align-items: flex-start;
+                gap: 58px;
+                flex-direction: row;
+                margin-bottom: 100px;
+            }
+            .footer_nav_mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                font-size: 14px;
+            }
             section {
                 width: 100%;
                 padding-left: 32px;
@@ -684,11 +709,9 @@
 
 <footer class="footer_background">
     <section>
-        <div class="footer_layout">
-            <div class="logo">
+        <div class="footer_wrap">
+            <div class="footer_layout">
                 <img src="logo.png" class="logo" alt="icon">
-            </div>
-            <div class="footer_nav_layout">
                 <nav>
                     <ul>
                         <li><img src="icon-blog.png" class="icon_blog" alt="icon"></li>
@@ -698,11 +721,12 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer_nav_mobile">
+            <div class="footer_layout_mobile">
                 <nav>
-                    <ul>
+                    <ul class="footer_nav_mobile">
                         <li>About</li>
                         <li>Blog</li>
+                        <li>Support</li>
                         <li>Terms of Use</li>
                     </ul>
                 </nav>
@@ -710,6 +734,8 @@
         </div>
     </section>
 </footer>
+
+
 </body>
 <script>
     var container = document.getElementById('map');
