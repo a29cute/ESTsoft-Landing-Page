@@ -381,14 +381,32 @@
         .footer_nav_mobile{
             display: none;
         }
-
+        .footer_wrap{
+            display: flex;
+            flex-direction: row;
+            margin-top: -55px;
+            margin-bottom: 45px;
+        }
 
 
         @media (min-width: 390px) and (max-width: 798px) {
-
+            .footer_logo{
+                width: 112px;
+                height: 34px;
+            }
+            .footer_nav{
+                width: 176px;
+                height: 36px;
+            }
+            .nav_sns{
+                gap: 16px;
+            }
             .footer_wrap{
                 display: flex;
                 flex-direction: row;
+                margin-top:-100px;
+                height: 178px;
+                margin-bottom: 0;
             }
             .footer_layout_mobile{
                 padding-top: 30px;
@@ -404,6 +422,7 @@
                 flex-direction: column;
                 align-items: flex-end;
                 font-size: 14px;
+                gap: 16px;
             }
             section {
                 width: 100%;
@@ -711,9 +730,9 @@
     <section>
         <div class="footer_wrap">
             <div class="footer_layout">
-                <img src="logo.png" class="logo" alt="icon">
-                <nav>
-                    <ul>
+                <img src="logo.png" class="footer_logo" alt="icon">
+                <nav class="footer_nav">
+                    <ul class="nav_sns">
                         <li><img src="icon-blog.png" class="icon_blog" alt="icon"></li>
                         <li><img src="icon-insta.png" class="icon_insta" alt="icon"></li>
                         <li><img src="icon-facebook.png" class="icon_facebook" alt="icon"></li>
@@ -722,7 +741,7 @@
                 </nav>
             </div>
             <div class="footer_layout_mobile">
-                <nav>
+                <nav >
                     <ul class="footer_nav_mobile">
                         <li>About</li>
                         <li>Blog</li>
