@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODU 랜딩페이지</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .a11y-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            border: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            clip-path: inset(50%);
+            white-space: nowrap;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2e9d8;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        article{
+            width: 100%;
+            padding-left: 320px;
+            padding-right: 320px;
+        }
+        section{
+            width: 100%;
+            padding-left: 320px;
+            padding-right: 320px;
+        }
+        .background{
+            background-color: #f2e9d8;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .nav_layout{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+        .footer_nav_layout{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+        .section2_layout{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .section3_layout{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 88px;
+            margin-top: 122px;
+        }
+        .section4_layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 72px;
+            height: auto;
+            box-sizing: border-box;
+            justify-content: center;
+
+        }
+        .section5_layout{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-top: 100px;
+            gap: 28px;
+        }
+        .section6_layout{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border-top: 1px solid #C4C4C4;
+            margin-top: 80px;
+            padding-top: 68px;
+        }
+        .downloadButtonHeader{
+            width: 140px;
+            height: 50px;
+            background-color: #D97652;
+            border: 0;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-left: 49px;
+        }
+        .downloadButtonMain{
+            width: 140px;
+            height: 50px;
+            background-color: #D97652;
+            border: 0;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .showMoreButton{
+            width: 143px;
+            height: 50px;
+            background-color: #D97652;
+            border: 0;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h5 {
+            font-size: 16px;
+        }
+
+        h6 {
+            font-size: 14px;
+            color: #F2E9D8;
+        }
+
+        .header_layout{
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            flex: 1;
+            display: flex;
+            height: 102px;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+        .footer_layout{
+            width: 100%;
+            /*box-sizing: border-box;*/
+            /*align-items: center;*/
+            flex: 1;
+            display: flex;
+            /*height: 102px;*/
+            flex-direction: row;
+            justify-content:space-between;
+            /*margin-top:-100px;*/
+        }
+        .section1Align{
+            width: 100%;
+            box-sizing: border-box;
+            flex: 1;
+            display: flex;
+            gap: 170px;
+            align-items: flex-end;
+            flex-direction: row;
+        }
+        .section1_text_layout{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 200px 0 261px 0;
+            gap: 40px;
+        }
+        .section2Align{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 127px;
+            justify-content: center;
+            margin-top: 78px;
+        }
+        .section2textAlign{
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            font-size: 16px;
+            gap: 30px;
+        }
+        nav ul li {
+            display: flex;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        section h2, section h3, section h4, section h5 {
+            margin: 0;
+        }
+        .section_image{
+            border-radius: 30px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+            width: 100%; /* 이미지가 부모 컨테이너의 너비를 차지하도록 설정 */
+            height: auto;
+        }
+        .section3_TextGap{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .boxCat{
+            width: 415px;
+            height: 766px;
+            margin-top: 32px;
+        }
+        .icon_mail{
+            width: 24px;
+            height: 24px;
+            margin: 18px 16px 18px 28px;
+        }
+        .section1_image_layout {
+            box-sizing: border-box;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section6textAlign{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        #map{
+            width: 100%;
+            height:520px;
+            margin: 48px 0 80px 0; /* 상단 여백: 80px, 우측 여백: 320px, 하단 여백: 68px, 좌측 여백: 320px */
+        }
+
+        .text-color-white{
+            color: #FFFFFF;
+        }
+        .text-color-orange{
+            color: #D97652;
+        }
+        .section7_text_layout {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        input[type="email"] {
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            text-align: left;
+            margin: 20px 16px 20px 40px;
+            flex: 1;
+        }
+        .form_border {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            box-sizing: border-box;
+            width: 100%;
+            height: 200px;
+            background-color: #263140;
+            border-radius: 30px;
+            padding: 50px 58px 51px 58px;
+            margin-top:80px;
+        }
+        .section7_form_layout {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .subscribeButton {
+            width: 135px;
+            height: 50px;
+            background-color: #D97652;
+            border: 0;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-right: 5px;
+            transform: translate(-159px);
+            position: absolute;
+            right: 220px
+        }
+        .form-container{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            border-radius: 60px;
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 60px;
+            box-sizing: border-box;
+        }
+        .form-container::before{
+            transform: translateX(28px);
+            content:'';
+            width: 24px;
+            height: 24px;
+            background-image: url("mail.png");
+        }
+        .footer_background::before{
+            content:'';
+            width: 100%;
+            height: 340px;
+            background: url("img_7.png") center/cover no-repeat;
+            z-index: -1;
+            position: relative;
+            transform: translateY(-100px);
+        }
+
+        .map_wrap {position:relative;overflow:hidden;width:100%;height:520px;}
+        .radius_border{border:1px solid #919191;border-radius:5px;}
+        .custom_typecontrol {position:absolute;top:60px;right:10px;overflow:hidden;width:130px;height:30px;margin:0;padding:0;z-index:1;font-size:12px;}
+        .custom_typecontrol span {display:block;width:63px;height:30px;float:left;text-align:center;line-height:30px;cursor:pointer;}
+        .custom_typecontrol .btn {background:#fff;background:linear-gradient(#fff,  #e6e6e6);}
+        .custom_typecontrol .btn:hover {background:#f5f5f5;background:linear-gradient(#f5f5f5,#e3e3e3);}
+        .custom_typecontrol .btn:active {background:#e6e6e6;background:linear-gradient(#e6e6e6, #fff);}
+        .custom_typecontrol .selected_btn {color:#fff;background:#425470;background:linear-gradient(#425470, #5b6d8a);}
+        .custom_typecontrol .selected_btn:hover {color:#fff;}
+        .custom_zoomcontrol {position:absolute;top:100px;right:10px;width:40px;height:80px;overflow:hidden;z-index:1;background-color:#f5f5f5;}
+        .custom_zoomcontrol span {display:flex;width:40px;height:50%;text-align:center;cursor:pointer;justify-content:center;align-items: center}
+        .custom_zoomcontrol span img {width:15px;height:15px;border:none;}
+        .custom_zoomcontrol span:first-child{border-bottom:1px solid #bfbfbf;}
+
+        .custom_mapcontrol span {display:flex;width:40px;height:100%;text-align:center;cursor:pointer;justify-content:center;align-items: center}
+        .custom_mapcontrol {position:absolute;top:250px;right:10px;width:40px;height:40px;overflow:hidden;z-index:1;background-color:#f5f5f5;}
+        .custom_markercontrol span {display:flex;width:40px;height:100%;text-align:center;cursor:pointer;justify-content:center;align-items: center}
+        .custom_markercontrol {position:absolute;top:200px;right:10px;width:40px;height:40px;overflow:hidden;z-index:1;background-color:#f5f5f5;}
+
+        .footer_nav_mobile{
+            display: none;
+        }
+        .footer_wrap{
+            display: flex;
+            flex-direction: row;
+            margin-top: -55px;
+            margin-bottom: 45px;
+        }
+        .map_stytle{
+            width:100%;
+            height:520px;
+            position:relative;
+        }
+
+
+        @media (min-width: 390px) and (max-width: 798px) {
+            input[type="email"] {
+                font-size: 12px;
+            }
+
+            .sns_icon{
+                width: 32px;
+                height: 32px;
+            }
+            .map_style{
+                width:100%;
+                height:132px;
+                position:relative;
+            }
+            .footer_logo{
+                width: 112px;
+                height: 34px;
+            }
+            .footer_nav{
+                width: 176px;
+                height: 36px;
+            }
+            .nav_sns{
+                gap: 16px;
+            }
+            .footer_wrap{
+                display: flex;
+                flex-direction: row;
+                margin-top:-100px;
+                height: 178px;
+                margin-bottom: 0;
+            }
+            .footer_layout_mobile{
+                padding-top: 30px;
+                width: 100%;
+                box-sizing: border-box;
+                align-items: flex-start;
+                gap: 58px;
+                flex-direction: row;
+                margin-bottom: 100px;
+            }
+            .footer_nav_mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                font-size: 14px;
+                gap: 16px;
+            }
+            section {
+                width: 100%;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+            article{
+                width: 100%;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+            .nav_layout {
+                display: none;
+            }
+            .footer_layout{
+                padding-top: 30px;
+                width: 100%;
+                box-sizing: border-box;
+                align-items: flex-start;
+                gap: 58px;
+                flex-direction: column;
+                margin-bottom: 100px;
+            }
+            .footer_nav_layout {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }
+            .section1Align {
+                align-items: center;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .section3_layout,
+            .section2Align{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+            }
+
+            .section2textAlign {
+                flex-direction: column;
+                text-align: left;
+            }
+            .section1_text_layout {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 30px;
+                margin: 40px 0 0 0;
+            }
+            .downloadButtonMain {
+                width: 114px;
+                height: 40px;
+                background-color: #D97652;
+                border: 0;
+                border-radius: 40px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 14px;
+            }
+
+            .header_layout {
+                margin: 24px 20px;
+                justify-content: flex-start;
+            }
+            .boxCat {
+                width: 197px;
+                height: auto;
+                margin-top: 30px;
+            }
+            #map {
+                width: 100%;
+                height: 132px;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+            }
+            .section4_layout {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .form-container {
+                width: 100%;
+                height: auto;
+            }
+            .section7_text_layout {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                margin-right: 0;
+                gap: 20px;
+            }
+            .section7_form_layout {
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: center;
+                height: auto;
+                gap: 20px;
+            }
+
+            .form_border {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+                align-items: flex-end;
+                padding: 36px 32px 30px 32px;
+                box-sizing: border-box;
+                border-radius: 18px;
+                height: 348px;
+                justify-content: flex-start;
+            }
+            .subscribeButton{
+                position: relative;
+                transform: translateX(230px);
+                width: 115px;
+                height: 40px;
+                font-size: 14px;
+                top: 60px;
+            }
+
+            .form-container{
+                position: relative;
+                width: 100%;
+                height: 40px;
+                flex: 0;
+            }
+
+            .custom_markercontrol,
+            .custom_mapcontrol,
+            .custom_typecontrol,
+            .custom_zoomcontrol{
+                scale: min(0.5);
+            }
+            .custom_typecontrol{
+                right: -20px;
+                top: 50px;
+            }
+            .custom_zoomcontrol{
+                top: 60px;
+                right: 2px;
+            }
+            .custom_markercontrol{
+                top: 115px;
+                right: 2px;
+            }
+            .custom_mapcontrol{
+                top: 140px;
+                right: 2px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+<!-- 로고와 네비게이션, 로고는 상단 왼쪽, 네비게이션은 상단 오른쪽에 배치 -->
+
+<header>
+    <section>
+        <div class ="header_layout">
+            <h1 class="a11y-hidden">HODU</h1>
+            <div class="logo">
+                <img src="logo.png" class="logo" alt="icon">
+            </div>
+            <div class="nav_layout">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="home">Home</a></li>
+                        <li><a href="#about" class="about">About</a></li>
+                        <li><a href="#support" class="support">Support</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+    <!-- 첫 번째 박스고양이 -->
+    <section  class="background">
+        <div class="section1Align">
+            <div class="section1_text_layout">
+                <h2>
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing and
+                </h2>
+                <h5>
+                    Lorem Ipsum is simply dummy text of the printing and<br>
+                    typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text<br>
+                    ever since the 1500s, when an unknown
+                </h5>
+                <button type="button" class="downloadButtonMain" onclick="window.location.href='파일주소'">Download</button>
+            </div>
+            <div class="section1_image_layout">
+                <img src="img_main.png" class="boxCat" alt="section1 고양이">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 왼쪽 사진, 오른쪽 텍스트 -->
+    <section>
+        <div class="section2_layout">
+            <div class="section2Align">
+                <img src="img_0.png" class="section_image" alt="section2 고양이">
+                <div class="section2textAlign">
+                    <h3>
+                        Lorem Ipsum is simply<br>
+                        dummy text of the printing<br>
+                        and dummy text
+                    </h3>
+                    <h5>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+                        industry.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 텍스트 -->
+    <section>
+        <div class="section3_layout">
+            <div class="section3_TextGap">
+                <h2>
+                    <span class="text-color-orange">dummy text of the printing and dummy</span>
+                </h2>
+                <h5>
+                    Lorem Ipsum is simply <span class="text-color-orange">dummy text</span> of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                </h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3x2 배열의 정사각형 사진(총 6개) -->
+    <section class="section4_layout">
+        <img src="img_1.png" class="section_image" alt="1">
+        <img src="img_2.png" class="section_image" alt="2">
+        <img src="img_3.png" class="section_image" alt="3">
+        <img src="img_4.png" class="section_image" alt="4">
+        <img src="img_5.png" class="section_image" alt="5">
+        <img src="img_6.png" class="section_image" alt="6">
+    </section>
+
+    <!-- 텍스트와 더보기 버튼 -->
+    <section>
+        <div class="section5_layout">
+            <h4>
+                Continue exploring HODU
+            </h4>
+            <button type="button" class="showMoreButton" onclick="showMoreContent()">Show More</button>
+        </div>
+    </section>
+
+    <!-- 찾아오는 길 -->
+    <section>
+        <div class="section6_layout">
+            <div class="section6textAlign">
+                <h3>
+                    Where you'll be
+                </h3>
+                <h5>
+                    330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+                </h5>
+            </div>
+            <div class="map_wrap">
+                <div id="map" class="map_style"></div>
+                <!-- 지도타입 컨트롤 div 입니다 -->
+                <div class="custom_typecontrol radius_border">
+                    <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+                    <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+                </div>
+                <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+                <div class="custom_zoomcontrol radius_border">
+                    <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>
+                    <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+                </div>
+                <div class="custom_markercontrol radius_border">
+                    <span onclick="markerRemove()">마커리셋</span>
+                </div>
+                <div class="custom_mapcontrol radius_border">
+                    <span onclick="mapLevel()">레벨리셋</span>
+                </div>
+            </div>
+                <script type="text/javascript"
+                        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=62aad78a52b696dbcd1c11a64a1a7615">
+                </script>
+            </div>
+    </section>
+    <!-- 구독하기 -->
+    <article>
+        <div class="form_border">
+            <div class="section7_text_layout">
+                <h3><span class="text-color-white">Subscribe to our Blog post</span></h3>
+                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text
+                </h6>
+            </div>
+            <div class="section7_form_layout">
+                <form class="form-container" onsubmit="return validateEmail();">
+                    <label for="emailInput" class="a11y-hidden">input mail for subscribe</label>
+                    <input type="email" id="emailInput" placeholder="Enter your e-mail address" required>
+                    <button type="submit" class="subscribeButton">Subscribe</button>
+                </form>
+
+            </div>
+        </div>
+    </article>
+</main>
+
+<footer class="footer_background">
+    <section>
+        <div class="footer_wrap">
+            <div class="footer_layout">
+                <img src="logo.png" class="footer_logo" alt="icon">
+                <nav class="footer_nav">
+                    <ul class="nav_sns">
+                        <li><img src="icon-blog.png" class="sns_icon" alt="icon"></li>
+                        <li><img src="icon-insta.png" class="sns_icon" alt="icon"></li>
+                        <li><img src="icon-facebook.png" class="sns_icon" alt="icon"></li>
+                        <li><img src="icon-youtube.png" class="sns_icon" alt="icon"></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_layout_mobile">
+                <nav>
+                    <ul class="footer_nav_mobile">
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Support</li>
+                        <li>Terms of Use</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+</footer>
+
+
+</body>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3 // 초기 레벨
+    };
+
+    var map = new kakao.maps.Map(container, options);
+    var marker = null; // 마커 변수를 초기화합니다.
+    var initialLevel = options.level; // 초기 레벨을 저장합니다.
+
+    function setMapType(maptype) {
+        var roadmapControl = document.getElementById('btnRoadmap');
+        var skyviewControl = document.getElementById('btnSkyview');
+        if (maptype === 'roadmap') {
+            map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
+            roadmapControl.className = 'selected_btn';
+            skyviewControl.className = 'btn';
+        } else {
+            map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
+            skyviewControl.className = 'selected_btn';
+            roadmapControl.className = 'btn';
+        }
+    }
+
+    function zoomIn() {
+        map.setLevel(map.getLevel() - 1);
+    }
+
+    function zoomOut() {
+        map.setLevel(map.getLevel() + 1);
+    }
+
+    function mapLevel() {
+        map.setLevel(initialLevel); // 초기 레벨로 설정
+    }
+
+    function createMarker(latlng) {
+        // 마커를 새로 생성합니다
+        marker = new kakao.maps.Marker({
+            position: latlng
+        });
+        marker.setMap(map);
+    }
+
+    kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
+        var latlng = mouseEvent.latLng;
+        // 기존 마커가 있으면 제거한 후 새 마커를 생성합니다.
+        if (marker) {
+            marker.setMap(null);
+        }
+        createMarker(latlng);
+    });
+
+    function markerRemove() {
+        if (marker) {
+            marker.setMap(null);
+            marker = null;
+        }
+    }
+</script>
+</html>
