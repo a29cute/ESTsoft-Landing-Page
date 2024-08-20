@@ -26,13 +26,15 @@
         }
 
         footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
+
             height: auto;
             box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1280px;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+
         }
 
         header {
@@ -40,21 +42,20 @@
             justify-content: space-between;
             align-items: center;
             background-color: #f2e9d8;
-            width: 100%;
             height: auto;
             flex-direction: column;
             box-sizing: border-box;
         }
 
-        article{
-            width: 100%;
-            padding-left: 320px;
-            padding-right: 320px;
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1280px;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
         }
         section{
-            width: 100%;
-            padding-left: 320px;
-            padding-right: 320px;
+
         }
         .background{
             background-color: #f2e9d8;
@@ -349,15 +350,15 @@
             height: 24px;
             background-image: url("mail.png");
         }
-        .footer_background::before{
-            content:'';
-            width: 100%;
-            height: 340px;
-            background: url("img_7.png") center/cover no-repeat;
-            z-index: -1;
-            position: relative;
-            transform: translateY(-100px);
-        }
+        /*.footer_background::before{*/
+        /*    content:'';*/
+        /*    width: 100%;*/
+        /*    height: 340px;*/
+        /*    background: url("img_7.png") center/cover no-repeat;*/
+        /*    z-index: -1;*/
+        /*    position: relative;*/
+        /*    transform: translateY(-100px);*/
+        /*}*/
 
         .map_wrap {position:relative;overflow:hidden;width:100%;height:520px;}
         .radius_border{border:1px solid #919191;border-radius:5px;}
@@ -638,8 +639,7 @@
 <!-- 로고와 네비게이션, 로고는 상단 왼쪽, 네비게이션은 상단 오른쪽에 배치 -->
 
 <header>
-    <section>
-        <div class ="header_layout">
+        <div class ="container header_layout">
             <h1 class="a11y-hidden">HODU</h1>
             <div class="logo">
                 <img src="logo.png" class="logo" alt="icon">
@@ -655,13 +655,13 @@
                 <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
             </div>
         </div>
-    </section>
+
 </header>
 
 <main>
     <!-- 첫 번째 박스고양이 -->
     <section  class="background">
-        <div class="section1Align">
+        <div class="container section1Align">
             <div class="section1_text_layout">
                 <h2>
                     Lorem Ipsum is simply<br>
@@ -684,7 +684,7 @@
 
     <!-- 왼쪽 사진, 오른쪽 텍스트 -->
     <section>
-        <div class="section2_layout">
+        <div class="container section2_layout">
             <div class="section2Align">
                 <img src="img_0.png" class="section_image" alt="section2 고양이">
                 <div class="section2textAlign">
@@ -704,7 +704,7 @@
 
     <!-- 텍스트 -->
     <section>
-        <div class="section3_layout">
+        <div class="container section3_layout">
             <div class="section3_TextGap">
                 <h2>
                     <span class="text-color-orange">dummy text of the printing and dummy</span>
@@ -718,7 +718,7 @@
     </section>
 
     <!-- 3x2 배열의 정사각형 사진(총 6개) -->
-    <section class="section4_layout">
+    <section class="container section4_layout">
         <img src="img_1.png" class="section_image" alt="1">
         <img src="img_2.png" class="section_image" alt="2">
         <img src="img_3.png" class="section_image" alt="3">
@@ -729,7 +729,7 @@
 
     <!-- 텍스트와 더보기 버튼 -->
     <section>
-        <div class="section5_layout">
+        <div class="container section5_layout">
             <h4>
                 Continue exploring HODU
             </h4>
@@ -739,7 +739,7 @@
 
     <!-- 찾아오는 길 -->
     <section>
-        <div class="section6_layout">
+        <div class="container section6_layout">
             <div class="section6textAlign">
                 <h3>
                     Where you'll be
@@ -773,8 +773,8 @@
             </div>
     </section>
     <!-- 구독하기 -->
-    <article>
-        <div class="form_border">
+    <section>
+        <div class="container form_border">
             <div class="section7_text_layout">
                 <h3><span class="text-color-white">Subscribe to our Blog post</span></h3>
                 <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
@@ -789,13 +789,12 @@
                 </form>
             </div>
         </div>
-    </article>
+    </section>
 </main>
 
-<footer class="footer_background">
+<footer>
     <section>
-        <div class="footer_wrap">
-            <div class="footer_layout">
+            <div class="container footer_layout">
                 <img src="logo.png" class="footer_logo" alt="icon">
                 <nav class="footer_nav">
                     <ul class="nav_sns">
@@ -816,7 +815,6 @@
                     </ul>
                 </nav>
             </div>
-        </div>
     </section>
 </footer>
 <div id="modal" class="modal">
@@ -919,6 +917,25 @@
         document.querySelector('.form-container').submit(); // Submit the form
         closeModal();
     }
+
+    // 스크롤 이벤트 리스너를 추가합니다.
+    document.addEventListener('scroll', function() {
+        // 현재 문서의 스크롤 위치를 가져옵니다.
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // 스크롤 위치에 따라 어떤 작업을 수행합니다.
+        if (scrollTop > 100) {
+            // 스크롤 위치가 100px 이상일 때 실행되는 코드
+            console.log('Scrolled more than 100px');
+        } else {
+            // 스크롤 위치가 100px 미만일 때 실행되는 코드
+            console.log('Scrolled less than 100px');
+        }
+
+    });
+
 </script>
+
 </body>
 </html>
+
