@@ -35,6 +35,11 @@
 
         }
 
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -43,6 +48,9 @@
             height: auto;
             flex-direction: column;
             box-sizing: border-box;
+            transition: top 0.3s;
+            z-index: 1000;
+            top:0;
         }
 
         .container{
@@ -640,7 +648,7 @@
 <body>
 <!-- 로고와 네비게이션, 로고는 상단 왼쪽, 네비게이션은 상단 오른쪽에 배치 -->
 
-<header>
+<header id="header">
         <div class ="container header_layout">
             <h1 class="a11y-hidden">HODU</h1>
             <div class="logo">
@@ -890,6 +898,17 @@
             marker = null;
         }
     }
+
+    // 스크롤 헤더 고정
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+        if (window.scrollY > 100) { // 스크롤 위치가 100px을 넘으면
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
+
 </script>
 <script>
     function validateEmail() {
@@ -923,23 +942,6 @@
         document.querySelector('.form-container').submit(); // Submit the form
         closeModal();
     }
-
-    // 스크롤 이벤트 리스너를 추가합니다.
-    document.addEventListener('scroll', function() {
-        // 현재 문서의 스크롤 위치를 가져옵니다.
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        // 스크롤 위치에 따라 어떤 작업을 수행합니다.
-        if (scrollTop > 100) {
-            // 스크롤 위치가 100px 이상일 때 실행되는 코드
-            console.log('Scrolled more than 100px');
-        } else {
-            // 스크롤 위치가 100px 미만일 때 실행되는 코드
-            console.log('Scrolled less than 100px');
-        }
-
-    });
-
 </script>
 
 </body>
