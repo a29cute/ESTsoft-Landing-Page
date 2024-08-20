@@ -414,6 +414,49 @@
             text-align: center;
         }
 
+        /* 스크롤 탑*/
+        .scroll-to-top {
+            position: fixed;
+            bottom: 150px;
+            right: 20px;
+            background-color: rgb(255 255 255 / 0.8);
+            background-image: url("scoll_btn_N.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #C4C4C4;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+            z-index: 1000;
+        }
+
+        .scroll-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top.inactive {
+
+            color: #a0a0a0;
+        }
+
+        .scroll-to-top:hover {
+            background-image: url("scoll_btn_Y.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .scroll-to-top::before {
+            content: '';
+        }
 
         @media (min-width: 390px) and (max-width: 798px) {
             .footer_background{
@@ -831,6 +874,11 @@
             </div>
     </section>
 </footer>
+
+<button class="scroll-to-top" id="scrollToTopBtn">
+
+</button>
+
 <div id="modal" class="modal">
     <div class="modal-content">
         <p>Are you sure you want to subscribe?</p>
@@ -909,6 +957,36 @@
         }
     });
 
+</script>
+<!--스크롤탑 버튼-->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        const footer = document.querySelector('footer');
+
+        function checkScrollPosition() {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                scrollToTopBtn.classList.add('active');
+                scrollToTopBtn.classList.remove('inactive');
+            } else {
+                scrollToTopBtn.classList.remove('active');
+                scrollToTopBtn.classList.add('inactive');
+            }
+        }
+
+        window.addEventListener('scroll', checkScrollPosition);
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Initial check in case of page load at a scrolled position
+        checkScrollPosition();
+    });
 </script>
 <script>
     function validateEmail() {
