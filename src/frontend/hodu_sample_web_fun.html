@@ -152,6 +152,17 @@
             font-weight: bold;
             color: #ffffff;
         }
+        .modalButton{
+            width: 183px;
+            height: 50px;
+            background-color: #D97652;
+            border: 0;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 38px;
+        }
         h2 {
             font-size: 48px;
             font-weight: bold;
@@ -407,10 +418,17 @@
             z-index: 1000;
         }
         .modal-content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
+            width: 600px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
             text-align: center;
+            background-image: url("modal-background.svg");
+            background-repeat: no-repeat;
+            background-color: #F2E9D8;
         }
 
         /* 스크롤 탑*/
@@ -456,8 +474,42 @@
         .scroll-to-top::before {
             content: '';
         }
-
+        .modal-thankyou{
+            color: #D97652;
+            margin: 24px 0 12px 0;
+        }
         @media (min-width: 390px) and (max-width: 798px) {
+            .modalButton{
+                width: 158px;
+                height: 40px;
+                background-color: #D97652;
+                border: 0;
+                border-radius: 40px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #ffffff;
+                margin-top: 28px;
+            }
+            .modal-content {
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                text-align: center;
+                background-image: url("modal-background-mobile.svg");
+                background-repeat: no-repeat;
+                background-color: #F2E9D8;
+            }
+
+            .modal-thankyou{
+                color: #D97652;
+                font-size: 24px;
+                margin: 24px 0 10px 0;
+            }
+
             .footer_background{
                 height: 240px;
                 margin-top: 230px;
@@ -878,9 +930,10 @@
 <button class="scroll-to-top" id="scrollToTopBtn"></button>
 <div id="modal" class="modal">
     <div class="modal-content">
-        <p>Are you sure you want to subscribe?</p>
-        <button onclick="confirmSubscription()">OK! I love HODU</button>
-        <button onclick="closeModal()">Cancel</button>
+        <img src="modal-cat.svg">
+        <h3 class="modal-thankyou">Thank you!</h3>
+        <p style="font-size: 14px">Lorem Ipsum is simply dummy text of the printing industry.</p>
+        <button class="modalButton" onclick="confirmSubscription()">OK! I love HODU</button>
     </div>
 </div>
 
@@ -986,39 +1039,39 @@
         checkScrollPosition();
     });
 </script>
-<!--<script>-->
-<!--    function validateEmail() {-->
-<!--        const emailInput = document.getElementById('emailInput');-->
-<!--        const email = emailInput.value.trim();-->
-<!--        if (!email || !validateEmailFormat(email)) {-->
-<!--            alert('Please enter a valid email address.');-->
-<!--            return false;-->
-<!--        }-->
-<!--        return true; // Allow form submission-->
-<!--    }-->
+<script>
+    function validateEmail() {
+        const emailInput = document.getElementById('emailInput');
+        const email = emailInput.value.trim();
+        if (!email || !validateEmailFormat(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+        return true; // Allow form submission
+    }
 
-<!--    function validateEmailFormat(email) {-->
-<!--        // Simple email validation regex-->
-<!--        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;-->
-<!--        return regex.test(email);-->
-<!--    }-->
+    function validateEmailFormat(email) {
+        // Simple email validation regex
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
 
-<!--    function showModal() {-->
-<!--        if (validateEmail()) {-->
-<!--            document.getElementById('modal').style.display = 'flex';-->
-<!--            event.preventDefault(); // Prevent form from submitting-->
-<!--        }-->
-<!--    }-->
+    function showModal() {
+        if (validateEmail()) {
+            document.getElementById('modal').style.display = 'flex';
+            event.preventDefault(); // Prevent form from submitting
+        }
+    }
 
-<!--    function closeModal() {-->
-<!--        document.getElementById('modal').style.display = 'none';-->
-<!--    }-->
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
 
-<!--    function confirmSubscription() {-->
-<!--        document.querySelector('.form-container').submit(); // Submit the form-->
-<!--        closeModal();-->
-<!--    }-->
-<!--</script>-->
+    function confirmSubscription() {
+        document.querySelector('.form-container').submit(); // Submit the form
+        closeModal();
+    }
+</script>
 
 </body>
 </html>
