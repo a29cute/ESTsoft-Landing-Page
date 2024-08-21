@@ -36,6 +36,19 @@
             font-size: 16px;
         }
 
+        .section7_font{
+            color: #F2E9D8;
+            font-size: 14px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        .font16{
+            font-size: 16px;
+        }
+
         /* 폰트체 */
         h2, h3, h4, h5{
             font-family: 'Pretendard-Bold', sans-serif;
@@ -58,6 +71,8 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+
         .a11y-hidden {
             position: absolute;
             width: 1px;
@@ -510,8 +525,26 @@
             color: #D97652;
             margin: 24px 0 12px 0;
         }
-        @media (min-width: 390px) and (max-width: 798px) {
 
+        .br_hidden{
+            display: none;
+        }
+
+
+        @media (min-width: 390px) and (max-width: 798px) {
+            .br_hidden{
+                display: flex;
+            }
+
+            br{
+                display: none;
+            }
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 390px;
+
+            }
             .form-container::before{
                scale: 0.8;
             }
@@ -528,11 +561,9 @@
             }
 
             .background{
-                height: 726px;
+                height: 718px;
             }
-            p{
-                font-size: 14px;
-            }
+
             .modalButton{
                 width: 158px;
                 height: 40px;
@@ -794,6 +825,8 @@
                 top: 120px;
                 right: 2px;
             }
+
+
         }
 
 
@@ -830,13 +863,13 @@
             <div class="section1_text_layout">
                 <h2>
                     Lorem Ipsum is simply<br>
-                    dummy text of the printing and
+                    dummy text<br class="br_hidden"> of the printing and
                 </h2>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and<br>
+                    Lorem Ipsum is simply dummy text <br class="br_hidden">of the printing and<br>
                     typesetting industry.<br>
-                    Lorem Ipsum has been the industry's standard dummy text<br>
-                    ever since the 1500s, when an unknown
+                    Lorem Ipsum has been the industry's <br class="br_hidden">standard dummy text<br>
+                    ever since the 1500s, <br class="br_hidden">when an unknown
                 </p>
                 <button type="button" class="downloadButtonMain" onclick="window.location.href='파일주소'">Download</button>
             </div>
@@ -874,8 +907,8 @@
                 <h2>
                     <span class="text-color-orange">dummy text of the printing and dummy</span>
                 </h2>
-                <p>
-                    Lorem Ipsum is simply <span class="text-color-orange">dummy text</span> of the printing and typesetting industry.<br>
+                <p class="font16">
+                    Lorem Ipsum is simply <span class="text-color-orange">dummy text</span> of the printing and typesetting industry.<br><br class="br_hidden">
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 </p>
             </div>
@@ -909,8 +942,8 @@
                 <h3>
                     Where you'll be
                 </h3>
-                <p>
-                    330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+                <p class="font16">
+                    330, Cheomdan-ro, Jeju-si, Jeju-do, <br class="br_hidden">Republic of Korea
                 </p>
             </div>
             <div class="map_wrap">
@@ -943,8 +976,8 @@
         <div class="container form_border">
             <div class="section7_text_layout">
                 <h3><span class="text-color-white">Subscribe to our Blog post</span></h3>
-                <p style="color: #F2E9D8;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                    Lorem Ipsum has been the industry's standard dummy text
+                <p class="section7_font">Lorem Ipsum is simply dummy text of the <br class="br_hidden">printing and typesetting industry.<br><br class="br_hidden">
+                    Lorem Ipsum has been the industry's <br class="br_hidden">standard dummy text
                 </p>
             </div>
             <div class="section7_form_layout">
