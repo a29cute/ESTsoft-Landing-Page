@@ -722,13 +722,7 @@
                 display: none;
             }
 
-            .menu_layout{
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                text-align: center;
-                justify-content: center;
-            }
+
 
             .footer_layout{
                 margin-bottom: 28px;
@@ -738,6 +732,7 @@
                 align-items: flex-start;
                 gap: 58px;
                 flex-direction: row;
+
             }
             .footer_nav_layout {
                 display: flex;
@@ -926,13 +921,13 @@
                 top: 0;
                 right: 0;
                 height: 100%;
-                width: 250px;
+                width: 289px;
                 background: #263140;
-                color: white;
                 transform: translateX(100%); /* 메뉴를 오른쪽 밖에 위치시킵니다. */
                 transition: transform 0.3s ease; /* 애니메이션 설정 */
-                padding: 40px;
+                padding: 120px 0 0 50px;
                 display: flex;
+                z-index: 1000;
             }
 
             .menu.open {
@@ -948,10 +943,29 @@
                 font-size: 30px;
                 cursor: pointer;
                 position: absolute;
-                top: 10px;
-                left: 10px;
+                top: 22px;
+                left: 20px;
             }
 
+            .menu_wrap{
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .menu_layout{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .menu_font{
+                font-size: 16px;
+                color: #FFFFFF;
+                font-family: 'Pretendard-Bold', sans-serif;
+            }
 
         }
 
@@ -985,11 +999,11 @@
                 <button type="button" class="menuCloseButton">
                     <img src="close-menu.svg" alt="closeMenuButton">
                 </button>
-                <nav>
-                <ul>
-                    <li><a href="#home" class="home">Home</a></li>
-                    <li><a href="#about" class="about">About</a></li>
-                    <li><a href="#support" class="support">Support</a></li>
+                <nav class="menu_wrap">
+                <ul class="menu_layout">
+                    <li><a href="#home" class="home menu_font">Home</a></li>
+                    <li><a href="#about" class="about menu_font ">About</a></li>
+                    <li><a href="#support" class="support menu_font">Support</a></li>
                 </ul>
                 </nav>
             </div>
@@ -1309,6 +1323,7 @@
         menuCloseButton.addEventListener('click', function() {
             menu.classList.remove('open');
         });
+
 
     });
 </script>
