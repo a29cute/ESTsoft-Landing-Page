@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODU 랜딩페이지</title>
+    <link rel="stylesheet" href="../css/stytle_new.css">
+</head>
+<body>
+<header id="header">
+        <div class ="container header_layout">
+            <h1 class="a11y-hidden">HODU</h1>
+            <div class="header_logo">
+                <img src="../image/logo.svg" class="logo" alt="icon">
+            </div>
+            <div class="nav_layout">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="home">Home</a></li>
+                        <li><a href="#about" class="about">About</a></li>
+                        <li><a href="#support" class="support">Support</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
+            </div>
+            <button type="button" class="menuOpenButton">
+                <img src="../image/menu.svg" alt="menuOpenButton">
+            </button>
+            <div class="menu">
+                <button type="button" class="menuCloseButton">
+                    <img src="../image/close-menu.svg" alt="closeMenuButton">
+                </button>
+                <nav class="menu_wrap">
+                <ul class="menu_layout">
+                    <li><a href="#home" class="home menu_font">Home</a></li>
+                    <li><a href="#about" class="about menu_font ">About</a></li>
+                    <li><a href="#support" class="support menu_font">Support</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+</header>
+
+<main>
+    <section  class="background">
+        <div class="container section1Align">
+            <div class="section1_text_layout">
+                <h2>
+                    Lorem Ipsum is simply<br><br class="hidden">
+                    dummy text<br class="hidden"> of the printing and
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text <br class="hidden">of the printing and<br>
+                    typesetting industry.<br><br class="hidden">
+                    Lorem Ipsum has been the industry's <br class="hidden">standard dummy text<br>
+                    ever since the 1500s, <br class="hidden">when an unknown
+                </p>
+                <button type="button" class="downloadButtonMain" onclick="window.location.href='파일주소'">Download</button>
+            </div>
+                <img src="../image/img_main.png" class="boxCat" alt="section1 고양이">
+        </div>
+    </section>
+    <section>
+        <div class="container section2_layout">
+            <div class="section2Align">
+                <img src="../image/img_0.png" class="section_image" alt="section2 고양이">
+                <div class="section2textAlign">
+                    <h3>
+                        Lorem Ipsum is simply<br><br class="hidden">
+                        dummy text of the printing<br><br class="hidden">
+                        and dummy text
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing <br class="hidden">and typesetting<br>
+                        industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container section3_layout">
+            <div class="section3_TextGap">
+                <h2>
+                    <span class="text-color-orange">dummy text of the printing <br class="hidden">and dummy</span>
+                </h2>
+                <p class="font-size-16">
+                    Lorem Ipsum is simply <span class="text-color-orange">dummy text</span> of the <br class="hidden">printing and typesetting industry.<br><br class="hidden">
+                    Lorem Ipsum has been the industry's <br class="hidden">standard dummy text ever since the 1500s, <br class="hidden">when an unknown
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container section4_layout">
+        <img src="../image/img_1.png" class="section_image" alt="1">
+        <img src="../image/img_2.png" class="section_image" alt="2">
+        <img src="../image/img_3.png" class="section_image" alt="3">
+        <img src="../image/img_4.png" class="section_image" alt="4">
+        <img src="../image/img_5.png" class="section_image" alt="5">
+        <img src="../image/img_6.png" class="section_image" alt="6">
+    </section>
+    <section>
+        <div class="container section5_layout">
+            <h4>
+                Continue exploring HODU
+            </h4>
+            <button type="button" class="showMoreButton" onclick="showMoreContent()">Show More</button>
+        </div>
+    </section>
+    <section>
+        <div class="container section6_layout">
+            <div class="section6textAlign">
+                <h3>
+                    Where you'll be
+                </h3>
+                <p class="font-size-16">
+                    330, Cheomdan-ro, Jeju-si, Jeju-do, <br class="hidden">Republic of Korea
+                </p>
+            </div>
+            <div class="map_wrap">
+                <div id="map" class="map_style"></div>
+                <!-- 지도타입 컨트롤 div 입니다 -->
+                <div class="custom_typecontrol radius_border">
+                    <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+                    <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+                </div>
+                <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+                <div class="custom_zoomcontrol radius_border">
+                    <span onclick="zoomIn()" class="map_icon_plus"></span>
+                    <span onclick="zoomOut()" class="map_icon_minus"></span>
+                </div>
+                <div class="custom_markercontrol radius_border">
+                    <span onclick="markerRemove()" class="map_icon_reset">
+                    </span>
+                </div>
+                <div class="custom_mapcontrol radius_border">
+                    <span onclick="mapLevel()" class="map_icon_level">
+                    </span>
+                </div>
+            </div>
+
+            </div>
+    </section>
+    <section class="footer_background">
+        <div class="container form_border">
+            <div class="section7_text_layout">
+                <h3><span class="text-color-white">Subscribe to our <br class="hidden">Blog post</span></h3>
+                <p class="section7_font">Lorem Ipsum is simply dummy text of the <br class="hidden">printing and typesetting industry.<br><br class="hidden">
+                    Lorem Ipsum has been the industry's <br class="hidden">standard dummy text
+                </p>
+            </div>
+            <div class="section7_form_layout">
+                <form class="form-container">
+                    <label for="emailInput" class="a11y-hidden">input mail for subscribe</label>
+                    <input type="email" id="emailInput" placeholder="Enter your e-mail address">
+                    <button type="submit" class="subscribeButton">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <section>
+            <div class="container footer_layout">
+                <div class="footer_wrap">
+                    <div class="footer_logo">
+                    <img src="../image/logo.svg" class="footer_logo" alt="icon">
+                    </div>
+                    <div>
+                    <nav class="footer_nav">
+                        <ul class="nav_sns">
+                            <li><img src="../image/icon-blog.png" class="sns_icon" alt="icon"></li>
+                            <li><img src="../image/icon-insta.png" class="sns_icon" alt="icon"></li>
+                            <li><img src="../image/icon-facebook.png" class="sns_icon" alt="icon"></li>
+                            <li><img src="../image/icon-youtube.png" class="sns_icon" alt="icon"></li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+                <nav class="footer_nav_mobile">
+                    <ul class="footer_nav_layout">
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Support</li>
+                        <li>Terms of Use</li>
+                    </ul>
+                </nav>
+            </div>
+    </section>
+</footer>
+<button class="scrollTopButton" id="scrollTopButton"></button>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <img class="modalCat" src="../image/modal-cat.svg">
+        <h3 class="modal-thankyou">Thank you!</h3>
+        <p style="font-size: 14px">Lorem Ipsum is simply dummy<br class="hidden"> text of the printing industry.</p>
+        <button class="modalButton">OK! I love HODU</button>
+    </div>
+</div>
+
+<script type="module" src="../../apikey.js"></script>
+<script type="module" src="../js/map.js"></script>
+<script src="../js/email-validation.js"></script>
+<script src="../js/modal-handler.js"></script>
+<script src="../js/scroll-top.js"></script>
+<script src="../js/side-menu.js"></script>
+<script src="../js/sticky-header.js"></script>
+
+</body>
+</html>
+
