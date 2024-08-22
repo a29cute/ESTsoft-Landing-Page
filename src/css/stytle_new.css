@@ -499,7 +499,6 @@ input[type="email"] {
 
 .scrollTopButton.active {
     opacity: 1;
-    background-image: url("../image/scoll_btn_N.svg");
     visibility: visible;
 }
 
@@ -516,7 +515,6 @@ input[type="email"] {
 }
 
 .scrollTopButton::before {
-    background-image: url("../image/scoll_btn_N.svg");
     content: '';
 }
 .modal-thankyou{

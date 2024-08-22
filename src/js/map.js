@@ -5,8 +5,9 @@ const { API_KEY } = config;
 function loadKakaoMapScript(callback) {
     const script = document.createElement('script');
     script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY}&autoload=false`;
+    script.type="text/javascript"
     script.onload = callback;
-    document.head.appendChild(script);
+    document.body.appendChild(script);
 }
 
 loadKakaoMapScript(() => {
