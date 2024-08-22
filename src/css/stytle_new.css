@@ -377,11 +377,9 @@ input[type="email"] {
     border-radius: 40px;
     font-size: 16px;
     color: #ffffff;
-
-    transform: translate(-159px);
     position: absolute;
-    right: -95px;
-    bottom: 75px;
+    right: 6px;
+    bottom: 5px;
     cursor: pointer;
 }
 .form-container{
@@ -391,6 +389,7 @@ input[type="email"] {
     width: 100%;
     height: 60px;
     box-sizing: border-box;
+    position: relative;
 }
 .form-container::before{
     transform: translate(25px,17px);
@@ -678,12 +677,11 @@ input[type="email"] {
         height: 40px;
         width: 100%;
     }
-    .form-container{
+    .form-container {
         position: relative;
         width: 100%;
         height: 40px;
         flex: 0;
-        /*transform: translateX(20px);*/
     }
     .sns_icon{
         width: 32px;
@@ -875,11 +873,12 @@ input[type="email"] {
     }
     .subscribeButton{
         position: absolute;
-        transform: translate(-95px, 40px);
+        transform: translateY(65px);
         width: 115px;
         height: 40px;
         font-size: 14px;
-        top: 20px;
+        right: 0;
+
         cursor: pointer;
     }
 
