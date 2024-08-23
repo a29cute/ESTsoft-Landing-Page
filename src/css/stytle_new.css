@@ -274,9 +274,12 @@ nav ul li {
     align-items: center;
 }
 a {
+    font-size: 16px;
+    font-family: 'Pretendard-Regular', sans-serif;
     text-decoration: none;
     color: #000000;
 }
+
 section h2, section h3, section h4, section h5 {
     margin: 0;
 }
@@ -525,6 +528,7 @@ input[type="email"] {
 .header_logo{
     width: 130px;
     height: 40px;
+
 }
 
 .footer_logo{
@@ -567,7 +571,23 @@ input[type="email"] {
     font-size: 14px;
 }
 
+.nav_mobile{
+    display: none;
+}
+
+.nav_web{
+    display: flex;
+    flex-direction: row;
+}
+
 @media (min-width: 390px) and (max-width: 798px) {
+    .nav_web{
+        display: none;
+    }
+
+    .nav_mobile{
+        display: flex;
+    }
     .downloadButtonMenu{
         width: 114px;
         height: 40px;
@@ -586,21 +606,12 @@ input[type="email"] {
         font-size: 14px;
     }
 
-    .header_logo_web{
-        width: 130px;
-        height: 40px;
-    }
-
-    .header_logo_mov{
+    .header_logo{
         width: 92px;
         height: 28px;
     }
-    .footer_logo_web{
-        width: 226px;
-        height: 70px;
-    }
 
-    .footer_logo_mov{
+    .footer_logo{
         width: 112px;
         height: 34px;
     }
@@ -685,10 +696,7 @@ input[type="email"] {
         height: 240px;
         margin-top: 230px;
     }
-    .logo{
-        width: 92px;
-        height: 28px;
-    }
+
     input[type="email"] {
 
         font-size: 12px;
@@ -753,10 +761,6 @@ input[type="email"] {
         padding-left: 32px;
         padding-right: 32px;
     }
-    .nav_layout {
-        display: none;
-    }
-
 
 
     .footer_layout{
@@ -947,22 +951,21 @@ input[type="email"] {
         height: 32px;
         cursor: pointer;
     }
+     aside{
+         position: fixed;
+         top: 0;
+         right: 0;
+         height: 100%;
+         width: 289px;
+         background: #263140;
+         transform: translateX(100%);
+         transition: transform 0.3s ease;
+         padding: 120px 0 0 50px;
+         display: flex;
+         z-index: 1200;
+     }
 
-    .menu {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 289px;
-        background: #263140;
-        transform: translateX(100%); /* 메뉴를 오른쪽 밖에 위치시킵니다. */
-        transition: transform 0.3s ease; /* 애니메이션 설정 */
-        padding: 120px 0 0 50px;
-        display: flex;
-        z-index: 1200;
-    }
-
-    .menu.open {
+    aside.open {
         transform: translateX(0); /* 메뉴가 열릴 때 화면에 표시되도록 변경 */
         display: flex;
     }
@@ -993,10 +996,11 @@ input[type="email"] {
         gap: 30px;
     }
 
-    .menu_font{
-        font-size: 16px;
+
+    a {
         color: #FFFFFF;
         font-family: 'Pretendard-Bold', sans-serif;
     }
+
 
 }
