@@ -587,6 +587,7 @@ input[type="email"] {
 
     .nav_mobile{
         display: flex;
+        flex-direction: column;
     }
     .downloadButtonMenu{
         width: 114px;
@@ -982,20 +983,15 @@ input[type="email"] {
         left: 20px;
     }
 
-    .menu_wrap{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
 
-    .menu_layout{
+    nav ul {
+        list-style: none;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         gap: 30px;
     }
-
 
     a {
         color: #FFFFFF;
