@@ -2,8 +2,8 @@ window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
 
     if (window.scrollY > 50) {
-        header.classList.add('sticky');
+        header.classList.add('header-sticky');
     } else {
-        header.classList.remove('sticky');
+        header.classList.remove('header-sticky');
     }
 });
