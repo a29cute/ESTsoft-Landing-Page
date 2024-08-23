@@ -580,6 +580,14 @@ aside{
     display: none;
 }
 @media (min-width: 390px) and (max-width: 798px) {
+    .menu_list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+    }
     .nav_web{
         display: none;
     }
