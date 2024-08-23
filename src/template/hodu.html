@@ -93,7 +93,7 @@
         }
 
         .header-sticky {
-            position: header-sticky;
+            position: sticky;
             top: 0;
         }
 
@@ -116,9 +116,7 @@
             max-width: 1280px;
             display: flex;
         }
-        section{
 
-        }
         .background{
             background-color: #f2e9d8;
             display: flex;
@@ -138,10 +136,7 @@
             text-align: center;
             justify-content: center;
         }
-        .section2_layout{
-            padding-left: 0;
-            padding-right: 0;
-        }
+
         .section3_layout{
             display: flex;
             align-items: center;
@@ -200,6 +195,10 @@
             font-size: 16px;
             cursor: pointer;
             color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Pretendard-Bold, sans-serif;
         }
         .showMoreButton{
             width: 143px;
@@ -1059,7 +1058,7 @@
     </header>
 
 <main>
-    <section  class="background">
+    <section class="background">
         <div class="container section1Align">
             <div class="section1_text_layout">
                 <h2>
@@ -1072,13 +1071,14 @@
                     Lorem Ipsum has been the industry's <br class="hidden">standard dummy text<br>
                     ever since the 1500s, <br class="hidden">when an unknown
                 </p>
-                <button type="button" class="downloadButtonMain" onclick="window.location.href='파일주소'">Download</button>
+                <a href="" class="downloadButtonMain" role="button">Download</a>
             </div>
-                <img src="../image/main-cat.svg" class="boxCat" alt="section1 고양이">
+            <img src="../image/main-cat.svg" class="boxCat" alt="고양이 캐릭터가 포함된 메인 이미지">
         </div>
     </section>
+
     <section>
-        <div class="container section2_layout">
+        <div class="container">
             <div class="section2Align">
                 <img src="../image/img_0.png" class="section_image" alt="section2 고양이">
                 <div class="section2textAlign">
@@ -1095,8 +1095,7 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container section3_layout">
+    <section class="container section3_layout">
             <div class="section3_TextGap">
                 <h2>
                     <span class="text-color-orange">dummy text of the printing <br class="hidden">and dummy</span>
@@ -1106,7 +1105,6 @@
                     Lorem Ipsum has been the industry's <br class="hidden">standard dummy text ever since the 1500s, <br class="hidden">when an unknown
                 </p>
             </div>
-        </div>
     </section>
     <section class="container section4_layout">
         <img src="../image/img_1.png" class="section_image" alt="1">
@@ -1116,16 +1114,13 @@
         <img src="../image/img_5.png" class="section_image" alt="5">
         <img src="../image/img_6.png" class="section_image" alt="6">
     </section>
-    <section>
-        <div class="container section5_layout">
+    <section class="container section5_layout">
             <h4>
                 Continue exploring HODU
             </h4>
             <button type="button" class="showMoreButton" onclick="showMoreContent()">Show More</button>
-        </div>
     </section>
-    <section>
-        <div class="container section6_layout">
+    <section class="container section6_layout">
             <div class="section6textAlign">
                 <h3>
                     Where you'll be
@@ -1154,8 +1149,6 @@
                     <span onclick="mapLevel()" class="map_icon_level">
                     </span>
                 </div>
-            </div>
-
             </div>
     </section>
     <section class="footer_background">
@@ -1222,7 +1215,7 @@
 <script src="../js/modal-handler.js"></script>
 <script src="../js/scroll-top.js"></script>
 <script src="../js/side-menu.js"></script>
-<script src="../js/header-sticky-header.js"></script>
+<script src="../js/sticky-header.js"></script>
 
 </body>
 </html>
