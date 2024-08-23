@@ -15,4 +15,3 @@ function closeModal(event) {
 // 이벤트 리스너를 설정
 document.querySelector('.subscribeButton').addEventListener('click', showModal);
 document.querySelector('.modalButton').addEventListener('click', closeModal);
-
