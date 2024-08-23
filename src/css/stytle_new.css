@@ -507,6 +507,7 @@ input[type="email"] {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1000;
+    opacity: 1;
 }
 
 .scrollTopButton::before {
