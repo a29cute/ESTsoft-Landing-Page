@@ -544,10 +544,6 @@ input[type="email"] {
     display: none;
 }
 
-.menu {
-    display: none;
-}
-
 .map_icon_level{
     background: url("../image/level.png") center/cover no-repeat;
     scale: 0.6;
@@ -580,6 +576,9 @@ input[type="email"] {
     flex-direction: row;
 }
 
+aside{
+    display: none;
+}
 @media (min-width: 390px) and (max-width: 798px) {
     .nav_web{
         display: none;
