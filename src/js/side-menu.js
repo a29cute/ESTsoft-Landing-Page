@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuOpenButton = document.querySelector('.menuOpenButton');
     const menuCloseButton = document.querySelector('.menuCloseButton');
-    const menu = document.querySelector('.menu');
+    const menu = document.querySelector('aside');
 
     menuOpenButton.addEventListener('click', function() {
         menu.classList.add('open');
