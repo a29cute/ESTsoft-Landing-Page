@@ -34,14 +34,9 @@ h5 {
 }
 
 p{
-    font-size: 14px;
-}
-
-.font-size-16{
     font-size: 16px;
 }
-
-/* 폰트체 */
+    /* 폰트체 */
 h2, h3, h4, h5{
     font-family: 'Pretendard-Bold', sans-serif;
 }
@@ -476,7 +471,7 @@ input[type="email"] {
 /* 스크롤 탑*/
 .scrollTopButton {
     position: fixed;
-    bottom: 150px;
+    bottom: 179px;
     right: 24px;
     background-color: rgb(255 255 255 / 0.8);
     background-image: url("../image/scoll_btn_N.svg");
@@ -491,7 +486,6 @@ input[type="email"] {
     align-items: center;
     cursor: pointer;
     opacity: 0;
-    visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
     z-index: 1000;
 }
@@ -566,7 +560,18 @@ input[type="email"] {
     scale: 0.9;
 }
 
+.font-size-14{
+    font-size: 14px;
+}
+
 @media (min-width: 390px) and (max-width: 798px) {
+    .scrollTopButton{
+        display: none;
+    }
+    p{
+        font-size: 14px;
+    }
+
     .header_logo_web{
         width: 130px;
         height: 40px;
