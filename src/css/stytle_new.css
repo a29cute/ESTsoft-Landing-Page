@@ -180,6 +180,8 @@ section{
     color: #ffffff;
     margin-left: 49px;
 }
+
+
 .downloadButtonMain{
     width: 140px;
     height: 50px;
@@ -565,6 +567,17 @@ input[type="email"] {
 }
 
 @media (min-width: 390px) and (max-width: 798px) {
+    .downloadButtonMenu{
+        width: 114px;
+        height: 40px;
+        background-color: #D97652;
+        border: 0;
+        border-radius: 40px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #ffffff;
+        margin-top: 50px;
+    }
     .scrollTopButton{
         display: none;
     }
@@ -968,11 +981,11 @@ input[type="email"] {
     .menu_wrap{
         display: flex;
         align-items: flex-start;
+        flex-direction: column;
     }
 
     .menu_layout{
         display: flex;
-        align-items: center;
         flex-direction: column;
         text-align: center;
         justify-content: center;
