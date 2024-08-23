@@ -11,35 +11,37 @@
 <header id="header">
         <div class ="container header_layout">
             <h1 class="a11y-hidden">HODU</h1>
-            <div class="header_logo">
-                <img src="../image/logo.svg" class="logo" alt="icon">
-            </div>
+                <img src="../image/logo.svg" class="header_logo" alt="icon">
             <div class="nav_layout">
-                <nav>
+                <nav class="nav_web">
                     <ul>
-                        <li><a href="#home" class="home">Home</a></li>
-                        <li><a href="#about" class="about">About</a></li>
-                        <li><a href="#support" class="support">Support</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#support">Support</a></li>
                     </ul>
+                    <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
                 </nav>
-                <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
-            </div>
-            <button type="button" class="menuOpenButton">
-                <img src="../image/menu.svg" alt="menuOpenButton">
-            </button>
-            <div class="menu">
-                <button type="button" class="menuCloseButton">
-                    <img src="../image/close-menu.svg" alt="closeMenuButton">
+                <button type="button" class="menuOpenButton">
+                    <img src="../image/menu.svg" alt="menuOpenButton">
                 </button>
-                <nav class="menu_wrap">
-                <ul class="menu_layout">
-                    <li><a href="#home" class="home menu_font">Home</a></li>
-                    <li><a href="#about" class="about menu_font ">About</a></li>
-                    <li><a href="#support" class="support menu_font">Support</a></li>
-                </ul>
-                    <button type="button" class="downloadButtonMenu" onclick="window.location.href='파일주소'">Download</button>
-                </nav>
+                <aside>
+                    <button type="button" class="menuCloseButton">
+                        <img src="../image/close-menu.svg" alt="closeMenuButton">
+                    </button>
+                    <nav class="nav_mobile menu_wrap">
+                        <ul class="menu_layout">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#support">Support</a></li>
+                        </ul>
+                        <button type="button" class="downloadButtonMenu" onclick="window.location.href='파일주소'">Download</button>
+                    </nav>
+                </aside>
+
             </div>
+
+
+
         </div>
 </header>
 
