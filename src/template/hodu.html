@@ -589,6 +589,20 @@
         aside{
             display: none;
         }
+
+        .sns_icon{
+            width: 42px;
+            height: 42px;
+            background-color: #F29D52;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sns_icon_image{
+            scale: 50%
+        }
         @media (min-width: 390px) and (max-width: 798px) {
             .header-nav-mobile-item{
                 list-style: none;
@@ -731,6 +745,10 @@
             .sns_icon{
                 width: 32px;
                 height: 32px;
+            }
+
+            .sns_icon_image{
+                scale: 40%;
             }
             .map_style{
                 width:100%;
@@ -1178,10 +1196,10 @@
                     <div>
                     <nav class="footer-nav-web-container">
                         <ul class="footer-nav-web-item">
-                            <li><img src="../image/icon-blog.png" class="sns_icon" alt="icon"></li>
-                            <li><img src="../image/icon-insta.png" class="sns_icon" alt="icon"></li>
-                            <li><img src="../image/icon-facebook.png" class="sns_icon" alt="icon"></li>
-                            <li><img src="../image/icon-youtube.png" class="sns_icon" alt="icon"></li>
+                            <li class="sns_icon"><img src="../image/blog.png" alt="blog icon" class="sns_icon_image"></li>
+                            <li class="sns_icon"><img src="../image/instagram.png" alt="instagram icon" class="sns_icon_image"></li>
+                            <li class="sns_icon"><img src="../image/facebook.png" alt="facebook icon" class="sns_icon_image"></li>
+                            <li class="sns_icon"><img src="../image/youtube.png" alt="youtube icon" class="sns_icon_image"></li>
                         </ul>
                     </nav>
                     </div>
