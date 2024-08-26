@@ -75,6 +75,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            outline: 0;
         }
 
 
@@ -126,7 +127,7 @@
             display: flex;
         }
 
-        .home-main-section-top {
+        .home-main-top {
             background-color: #f2e9d8;
             display: flex;
             justify-content: flex-start;
@@ -146,7 +147,7 @@
             justify-content: center;
         }
 
-        .section3_layout{
+        .home-main-explanation-desc{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -154,6 +155,7 @@
             justify-content: center;
             margin-bottom: 88px;
             margin-top: 122px;
+            gap: 40px;
         }
         .home-main-gallery {
             display: grid;
@@ -248,7 +250,7 @@
             margin-top: 45px;
             margin-bottom: 45px;
         }
-        .home-main-desc {
+        .home-main-top-desc {
             width: 100%;
             height: 798px;
             box-sizing: border-box;
@@ -265,7 +267,7 @@
             margin: 200px 0 261px 0;
             gap: 40px;
         }
-        .section2Align{
+        .home-main-information-desc{
             width: 100%;
             display: flex;
             align-items: center;
@@ -307,31 +309,13 @@
             width: 100%; /* 이미지가 부모 컨테이너의 너비를 차지하도록 설정 */
             height: auto;
         }
-        .section3_TextGap{
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
+
         .boxCat{
-            /*width: 415px;*/
-            /*height: 766px;*/
-            /*margin-top: 32px;*/
             position: relative;
             top: 120px;
         }
-        .icon_mail{
-            width: 24px;
-            height: 24px;
-            margin: 18px 16px 18px 28px;
-        }
-        .section1_image_layout {
-            box-sizing: border-box;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .section6textAlign{
+
+        .home-main-map-desc{
             width: 100%;
             display: flex;
             align-items: flex-start;
@@ -595,7 +579,7 @@
             display: none;
         }
 
-        .sns_icon{
+        .sns_icon_wrap{
             width: 42px;
             height: 42px;
             background-color: #F29D52;
@@ -681,7 +665,7 @@
                 position: absolute;
                 transform: translate(20px,10px);;
             }
-            .section6textAlign{
+            .home-main-map-desc{
                 gap: 16px;
             }
             .home-main-map {
@@ -693,7 +677,7 @@
                 margin-top: 60px;
             }
 
-            .home-main-section-top {
+            .home-main-top {
                 height: 718px;
             }
 
@@ -748,7 +732,7 @@
                 height: 40px;
                 flex: 0;
             }
-            .sns_icon{
+            .sns_icon_wrap{
                 width: 32px;
                 height: 32px;
             }
@@ -780,16 +764,7 @@
                 margin-top: 30px;
                 margin-bottom: 24px;
             }
-            .footer-web-container_mobile{
-                display: none;
-                padding-top: 30px;
-                width: 100%;
-                box-sizing: border-box;
-                align-items: flex-start;
-                gap: 58px;
-                flex-direction: row;
-                margin-bottom: 100px;
-            }
+
             .footer-nav-mobile-container{
                 display: flex;
                 width: 100%;
@@ -805,7 +780,6 @@
                 padding-left: 32px;
                 padding-right: 32px;
             }
-
 
             .footer-web-container{
                 margin-bottom: 28px;
@@ -827,18 +801,19 @@
                 font-size: 14px;
                 color: #767676;
             }
-            .home-main-desc {
+            .home-main-top-desc {
                 align-items: center;
                 flex-direction: column;
                 height: auto;
                 gap: 0;
             }
 
-            .section3_layout{
+            .home-main-explanation-desc{
                 margin-top: 60px;
                 margin-bottom: 40px;
+                gap: 30px;
             }
-            .section2Align{
+            .home-main-information-desc{
                 margin-top: 40px;
                 flex-direction: column;
                 align-items: center;
@@ -1011,7 +986,7 @@
             }
 
             aside.open {
-                transform: translateX(0); /* 메뉴가 열릴 때 화면에 표시되도록 변경 */
+                transform: translateX(0);
                 display: flex;
             }
 
@@ -1055,9 +1030,9 @@
             <div class="header-nav-container">
                 <nav class="header-nav-web-container">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#support">Support</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Support</a></li>
                     </ul>
                     <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
                 </nav>
@@ -1070,9 +1045,9 @@
                     </button>
                     <nav class="header-nav-mobile-container">
                         <ul class = header-nav-mobile-item>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#support">Support</a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Support</a></li>
                         </ul>
                         <button type="button" class="downloadButtonMenu" onclick="window.location.href='파일주소'">Download</button>
                     </nav>
@@ -1082,8 +1057,8 @@
     </header>
 
 <main>
-    <section class="home-main-section-top">
-        <div class="container home-main-desc">
+    <section class="home-main-top">
+        <div class="container home-main-top-desc">
             <div class="home-main-text">
                 <h2>
                     Lorem Ipsum is simply<br><br class="hidden">
@@ -1101,8 +1076,8 @@
         </div>
     </section>
 
-    <section>
-        <div class="container section2Align">
+    <section class="home-main-information">
+        <div class="container home-main-information-desc">
                 <img src="../image/img_0.png" class="section_image" alt="section2 고양이">
                 <div class="section2textAlign">
                     <h3>
@@ -1117,8 +1092,8 @@
             </div>
         </div>
     </section>
-    <section class="container section3_layout">
-            <div class="section3_TextGap">
+    <section class="home-main-explanation">
+            <div class="container home-main-explanation-desc">
                 <h2>
                     <span class="text-color-orange">dummy text of the printing <br class="hidden">and dummy</span>
                 </h2>
@@ -1143,7 +1118,7 @@
             <button type="button" class="showMoreButton" onclick="showMoreContent()">Show More</button>
     </section>
     <section class="container home-main-map">
-            <div class="section6textAlign">
+            <div class="home-main-map-desc">
                 <h3>
                     Where you'll be
                 </h3>
@@ -1202,10 +1177,10 @@
                     <div>
                     <nav class="footer-nav-web-container">
                         <ul class="footer-nav-web-item">
-                            <li class="sns_icon"><img src="../image/blog.png" alt="blog icon" class="sns_icon_image"></li>
-                            <li class="sns_icon"><img src="../image/instagram.png" alt="instagram icon" class="sns_icon_image"></li>
-                            <li class="sns_icon"><img src="../image/facebook.png" alt="facebook icon" class="sns_icon_image"></li>
-                            <li class="sns_icon"><img src="../image/youtube.png" alt="youtube icon" class="sns_icon_image"></li>
+                            <li class="sns_icon_wrap"><img src="../image/blog.png" alt="blog icon" class="sns_icon_image"></li>
+                            <li class="sns_icon_wrap"><img src="../image/instagram.png" alt="instagram icon" class="sns_icon_image"></li>
+                            <li class="sns_icon_wrap"><img src="../image/facebook.png" alt="facebook icon" class="sns_icon_image"></li>
+                            <li class="sns_icon_wrap"><img src="../image/youtube.png" alt="youtube icon" class="sns_icon_image"></li>
                         </ul>
                     </nav>
                     </div>
@@ -1224,7 +1199,7 @@
 <button class="scrollTopButton" id="scrollTopButton"></button>
 <div id="modal" class="modal">
     <div class="modal-content">
-        <img class="modalCat" src="../image/modal-cat.svg">
+        <img class="modalCat" src="../image/modal-cat.svg" alt="modal cat image">
         <h3 class="modal-thankyou">Thank you!</h3>
         <p class="font-size-14">Lorem Ipsum is simply dummy<br class="hidden"> text of the printing industry.</p>
         <button class="modalButton">OK! I love HODU</button>
