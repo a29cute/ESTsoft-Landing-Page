@@ -166,7 +166,7 @@
             justify-content: center;
 
         }
-        .gallery-more{
+        .home-main-gallery-more{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -260,7 +260,7 @@
             align-items: flex-end;
             flex-direction: row;
         }
-        .home-main-text{
+        .home-main-top-text{
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -276,7 +276,7 @@
             justify-content: center;
             margin-top: 78px;
         }
-        .section2textAlign{
+        .home-main-information-text{
             width: 100%;
             display: flex;
             gap: 30px;
@@ -302,7 +302,7 @@
         section h2, section h3, section h4, section h5 {
             margin: 0;
         }
-        .section_image{
+        .home-main-gallery-image{
             border-radius: 30px;
             box-sizing: border-box;
             box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
@@ -310,12 +310,12 @@
             height: auto;
         }
 
-        .boxCat{
+        .home-main-top-image{
             position: relative;
             top: 120px;
         }
 
-        .home-main-map-desc{
+        .home-main-map-text{
             width: 100%;
             display: flex;
             align-items: flex-start;
@@ -409,7 +409,7 @@
             margin-top: 180px;
         }
 
-        .map_wrap {position:relative;overflow:hidden;width:100%;}
+        .map-wrap {position:relative;overflow:hidden;width:100%;}
         .radius_border{border-radius:5px;box-shadow: 0 2px #80808033;}
         .custom_typecontrol {position:absolute;top:60px;right:10px;overflow:hidden;width:130px;height:30px;margin:0;padding:0;z-index:1;font-size:12px; background-color: white}
         .custom_typecontrol span {display:block;width:65px;height:30px;float:left;text-align:center;line-height:30px;cursor:pointer;}
@@ -440,7 +440,7 @@
             margin-top: 45px;
             margin-bottom: 45px;
         }
-        .map_style{
+        .map-style{
             width:100%;
             height:520px;
             position:relative;
@@ -638,7 +638,7 @@
                 height: 34px;
             }
 
-            .section_image{
+            .home-main-gallery-image{
                 border-radius: 18px;
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
             }
@@ -665,7 +665,7 @@
                 position: absolute;
                 transform: translate(20px,10px);;
             }
-            .home-main-map-desc{
+            .home-main-map-text{
                 gap: 16px;
             }
             .home-main-map {
@@ -673,7 +673,7 @@
                 padding-top: 40px;
             }
 
-            .gallery-more{
+            .home-main-gallery-more{
                 margin-top: 60px;
             }
 
@@ -740,7 +740,7 @@
             .sns_icon_image{
                 scale: 40%;
             }
-            .map_style{
+            .map-style{
                 width:100%;
                 height:132px;
                 position:relative;
@@ -822,12 +822,12 @@
 
             }
 
-            .section2textAlign {
+            .home-main-information-text {
                 flex-direction: column;
                 text-align: left;
                 gap: 20px;
             }
-            .home-main-text {
+            .home-main-top-text {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -865,7 +865,7 @@
                 padding-left: 20px;
                 padding-right: 20px;
             }
-            .boxCat {
+            .home-main-top-image {
                 width: 197px;
                 height: auto;
                 top: 45px;
@@ -1037,11 +1037,11 @@
                     <button type="button" class="downloadButtonHeader" onclick="window.location.href='파일주소'">Download</button>
                 </nav>
                 <button type="button" class="menuOpenButton">
-                    <img src="../image/menu.png" alt="menuOpenButton">
+                    <img src="../image/menu.png" alt="icon image">
                 </button>
                 <aside>
                     <button type="button" class="menuCloseButton">
-                        <img src="../image/arrow-right.png" alt="closeMenuButton">
+                        <img src="../image/arrow-right.png" alt="icon image">
                     </button>
                     <nav class="header-nav-mobile-container">
                         <ul class = header-nav-mobile-item>
@@ -1059,7 +1059,7 @@
 <main>
     <section class="home-main-top">
         <div class="container home-main-top-desc">
-            <div class="home-main-text">
+            <div class="home-main-top-text">
                 <h2>
                     Lorem Ipsum is simply<br><br class="hidden">
                     dummy text<br class="hidden"> of the printing and
@@ -1072,14 +1072,14 @@
                 </p>
                 <a href="" class="downloadButtonMain" role="button">Download</a>
             </div>
-            <img src="../image/main_cat.png" class="boxCat" alt="고양이 캐릭터가 포함된 메인 이미지">
+            <img src="../image/main_cat.png" class="home-main-top-image" alt="고양이 캐릭터가 포함된 메인 이미지">
         </div>
     </section>
 
     <section class="home-main-information">
         <div class="container home-main-information-desc">
-                <img src="../image/img_0.png" class="section_image" alt="section2 고양이">
-                <div class="section2textAlign">
+                <img src="../image/img_0.png" class="home-main-gallery-image" alt="고양이 이미지">
+                <div class="home-main-information-text">
                     <h3>
                         Lorem Ipsum is simply<br><br class="hidden">
                         dummy text of the printing<br><br class="hidden">
@@ -1104,21 +1104,21 @@
             </div>
     </section>
     <section class="container home-main-gallery">
-        <img src="../image/img_1.png" class="section_image" alt="1">
-        <img src="../image/img_2.png" class="section_image" alt="2">
-        <img src="../image/img_3.png" class="section_image" alt="3">
-        <img src="../image/img_4.png" class="section_image" alt="4">
-        <img src="../image/img_5.png" class="section_image" alt="5">
-        <img src="../image/img_6.png" class="section_image" alt="6">
+        <img src="../image/img_1.png" class="home-main-gallery-image" alt="1">
+        <img src="../image/img_2.png" class="home-main-gallery-image" alt="2">
+        <img src="../image/img_3.png" class="home-main-gallery-image" alt="3">
+        <img src="../image/img_4.png" class="home-main-gallery-image" alt="4">
+        <img src="../image/img_5.png" class="home-main-gallery-image" alt="5">
+        <img src="../image/img_6.png" class="home-main-gallery-image" alt="6">
     </section>
-    <section class="container gallery-more">
+    <section class="container home-main-gallery-more">
             <h4>
                 Continue exploring HODU
             </h4>
             <button type="button" class="showMoreButton" onclick="showMoreContent()">Show More</button>
     </section>
     <section class="container home-main-map">
-            <div class="home-main-map-desc">
+            <div class="home-main-map-text">
                 <h3>
                     Where you'll be
                 </h3>
@@ -1126,8 +1126,8 @@
                     330, Cheomdan-ro, Jeju-si, Jeju-do, <br class="hidden">Republic of Korea
                 </p>
             </div>
-            <div class="map_wrap">
-                <div id="map" class="map_style"></div>
+            <div class="map-wrap">
+                <div id="map" class="map-style"></div>
                 <!-- 지도타입 컨트롤 div 입니다 -->
                 <div class="custom_typecontrol radius_border">
                     <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
