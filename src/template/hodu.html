@@ -139,7 +139,7 @@
             text-align: center;
             justify-content: center;
         }
-        .footer-nav-mobile-item{
+        .footer-nav-mobile-list{
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -447,7 +447,7 @@
             border-radius: 12px;
         }
 
-        .modal {
+        .modal-container {
             display: none; /* 초기에는 숨김 */
             position: fixed;
             left: 0;
@@ -459,7 +459,7 @@
             align-items: center;
             z-index: 1000;
         }
-        .modal-content {
+        .modal-content-wrap {
             width: 600px;
             height: 400px;
             display: flex;
@@ -517,7 +517,7 @@
         .scrollTopButton::before {
             content: '';
         }
-        .modal-thankyou{
+        .modal-text{
             color: #D97652;
             margin: 24px 0 12px 0;
         }
@@ -526,13 +526,13 @@
             display: none;
         }
 
-        .header_logo{
+        .header-logo{
             width: 130px;
             height: 40px;
 
         }
 
-        .footer_logo{
+        .footer-logo{
             width: 226px;
             height: 70px;
         }
@@ -596,7 +596,7 @@
             .font-size-responsive{
                 font-size: 14px;
             }
-            .header-nav-mobile-item{
+            .header-nav-mobile-list{
                 list-style: none;
                 display: flex;
                 flex-direction: column;
@@ -628,12 +628,12 @@
             }
 
 
-            .header_logo{
+            .header-logo{
                 width: 92px;
                 height: 28px;
             }
 
-            .footer_logo{
+            .footer-logo{
                 width: 112px;
                 height: 34px;
             }
@@ -643,7 +643,7 @@
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
             }
 
-            .modalCat{
+            .modal-image{
                 width: 60px;
                 height: 62px;
             }
@@ -692,7 +692,7 @@
                 margin-top: 28px;
                 cursor: pointer;
             }
-            .modal-content {
+            .modal-content-wrap {
                 width: 300px;
                 height: 300px;
                 display: flex;
@@ -708,7 +708,7 @@
                 padding: 40px 55px 41px 56px;
             }
 
-            .modal-thankyou{
+            .modal-text{
                 color: #D97652;
                 font-size: 24px;
                 margin: 24px 0 10px 0;
@@ -745,7 +745,7 @@
                 height:132px;
                 position:relative;
             }
-            .footer_logo{
+            .footer-logo{
                 width: 112px;
                 height: 34px;
             }
@@ -753,7 +753,7 @@
                 width: 176px;
                 height: 36px;
             }
-            .footer-nav-web-item{
+            .footer-nav-web-list{
                 gap: 16px;
             }
             .footer-web-container{
@@ -791,7 +791,7 @@
                 flex-direction: column;
 
             }
-            .footer-nav-mobile-item {
+            .footer-nav-mobile-list {
                 display: flex;
                 align-items: flex-end;
                 flex-direction: column;
@@ -1026,7 +1026,7 @@
 <header>
         <div class="container header-container">
             <h1 class="a11y-hidden">HODU</h1>
-                <img src="../image/logo.svg" class="header_logo" alt="icon">
+                <img src="../image/logo.svg" class="header-logo" alt="icon">
             <div class="header-nav-container">
                 <nav class="header-nav-web-container">
                     <ul>
@@ -1044,7 +1044,7 @@
                         <img src="../image/arrow-right.png" alt="icon image">
                     </button>
                     <nav class="header-nav-mobile-container">
-                        <ul class = header-nav-mobile-item>
+                        <ul class = header-nav-mobile-list>
                             <li><a href="">Home</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Support</a></li>
@@ -1171,12 +1171,12 @@
     <section>
             <div class="container">
                 <div class="footer-web-container">
-                    <div class="footer_logo">
-                        <img src="../image/logo.svg" class="footer_logo" alt="icon">
+                    <div class="footer-logo">
+                        <img src="../image/logo.svg" class="footer-logo" alt="icon">
                     </div>
                     <div>
                     <nav class="footer-nav-web-container">
-                        <ul class="footer-nav-web-item">
+                        <ul class="footer-nav-web-list">
                             <li class="sns_icon_wrap"><img src="../image/blog.png" alt="blog icon" class="sns_icon_image"></li>
                             <li class="sns_icon_wrap"><img src="../image/instagram.png" alt="instagram icon" class="sns_icon_image"></li>
                             <li class="sns_icon_wrap"><img src="../image/facebook.png" alt="facebook icon" class="sns_icon_image"></li>
@@ -1186,7 +1186,7 @@
                     </div>
                 </div>
                 <nav class="footer-nav-mobile-container">
-                    <ul class="footer-nav-mobile-item">
+                    <ul class="footer-nav-mobile-list">
                         <li>About</li>
                         <li>Blog</li>
                         <li>Support</li>
@@ -1197,10 +1197,10 @@
     </section>
 </footer>
 <button class="scrollTopButton" id="scrollTopButton"></button>
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <img class="modalCat" src="../image/modal-cat.png" alt="modal cat image">
-        <h3 class="modal-thankyou">Thank you!</h3>
+<div id="modal" class="modal-container">
+    <div class="modal-content-wrap">
+        <img class="modal-image" src="../image/modal-cat.png" alt="modal cat image">
+        <h3 class="modal-text">Thank you!</h3>
         <p class="font-size-14">Lorem Ipsum is simply dummy<br class="hidden"> text of the printing industry.</p>
         <button class="modalButton">OK! I love HODU</button>
     </div>
