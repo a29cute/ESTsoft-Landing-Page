@@ -1,0 +1,29 @@
+@media (min-width: 390px) and (max-width: 798px) {
+
+    .hidden{
+        display: flex;
+    }
+
+    br{
+        display: none;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
