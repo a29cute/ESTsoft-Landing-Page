@@ -1,0 +1,15 @@
+@media (min-width: 390px) and (max-width: 798px) {
+
+    .home-main-gallery {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .home-main-gallery-image{
+        border-radius: 18px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+
+}
