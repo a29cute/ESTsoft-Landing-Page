@@ -1,0 +1,7 @@
+@media (min-width: 390px) and (max-width: 798px) {
+    .home-main-explanation-desc{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+}
