@@ -1,10 +1,10 @@
-import config from "../../key.js";
-
+import config from "../../apikey.js";
 const { API_KEY } = config;
 
 function loadKakaoMapScript(callback) {
     const script = document.createElement('script');
-    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY}&autoload=false`;
+    // script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY}&autoload=false`;
+    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=62aad78a52b696dbcd1c11a64a1a7615&autoload=false`;
     script.type= `text/javascript`
     script.onload = callback;
     document.body.appendChild(script);
