@@ -1,0 +1,50 @@
+@media (min-width: 390px) and (max-width: 798px) {
+
+    .home-main-map-text{
+        gap: 16px;
+    }
+
+    .home-main-map {
+        margin-top: 60px;
+        padding-top: 40px;
+    }
+
+    .map-style{
+        width:100%;
+        height:132px;
+        position:relative;
+    }
+
+    #map {
+        width: 100%;
+        height: 132px;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin: 28px 0 40px 0;
+    }
+
+    .custom_markercontrol,
+    .custom_mapcontrol,
+    .custom_typecontrol,
+    .custom_zoomcontrol{
+        scale: min(0.5);
+    }
+    .custom_typecontrol{
+        right: -20px;
+        top: 30px;
+    }
+    .custom_zoomcontrol{
+        top: 40px;
+        right: 2px;
+    }
+    .custom_markercontrol{
+        top: 95px;
+        right: 2px;
+    }
+    .custom_mapcontrol{
+        top: 120px;
+        right: 2px;
+    }
+
+}
