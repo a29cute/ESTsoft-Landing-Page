@@ -2,7 +2,7 @@
 
     .home-main-subscribe {
         height: 240px;
-        margin-top: 290px;
+        margin-top: 270px;
     }
 
     input[type="email"] {
@@ -44,7 +44,7 @@
         border-radius: 18px;
         height: 348px;
         justify-content: flex-start;
-        transform: translateY(-290px);
+        transform: translateY(-270px);
     }
     .subscribeButton{
         position: absolute;
