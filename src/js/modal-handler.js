@@ -10,7 +10,6 @@ function showModal(event) {
 function closeModal(event) {
     event.preventDefault(); // 기본 동작을 방지
     document.getElementById('modal').style.display = 'none'; // 모달 숨기기
-    alert("구독이 완료되셨습니다!");
 }
 
 // 이벤트 리스너를 설정
