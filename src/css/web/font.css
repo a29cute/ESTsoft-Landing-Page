@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+a {
+    font-size: 16px;
+    font-family: 'Pretendard-Regular', sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+h2 {
+    font-size: 48px;
+
+}
+h3 {
+    font-size: 36px;
+
+}
+h4 {
+    font-size: 24px;
+
+}
+h5 {
+    font-size: 16px;
+}
+
+.text-color-yellow {
+    color: #F2E9D8;
+}
+
+.font-size-16{
+    font-size: 16px;
+}
+.font-size-14{
+    font-size: 14px;
+}
+
+.font-size-responsive{
+    font-size: 16px;
+}
+
+/* 폰트체 */
+h2, h3, h4, h5{
+    font-family: 'Pretendard-Bold', sans-serif;
+}
+
+
+p{
+    font-size: 16px;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+button{
+    font-family: 'Pretendard-Bold', sans-serif;
+}
+
+nav, input {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+.text-color-white{
+    color: #FFFFFF;
+}
+.text-color-orange{
+    color: #D97652;
+}
