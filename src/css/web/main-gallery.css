@@ -1,0 +1,17 @@
+.home-main-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 72px;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+.home-main-gallery-image{
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+    width: 100%; /* 이미지가 부모 컨테이너의 너비를 차지하도록 설정 */
+    height: auto;
+}
