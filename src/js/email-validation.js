@@ -15,5 +15,3 @@ function inputCheck() {
     }
     return true;
 }
-
-
