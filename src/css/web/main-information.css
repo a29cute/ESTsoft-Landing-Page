@@ -1,0 +1,15 @@
+.home-main-information-desc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 127px;
+    justify-content: center;
+    margin-top: 78px;
+}
+.home-main-information-text{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
