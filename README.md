@@ -182,6 +182,12 @@
 📌 기술스택
 + HTML, CSS, JAVAScript
 
-📌 [배포 URL](https://a29cute.github.io/Landing-Page/)   
+📌 배포 URL
++ https://a29cute.github.io/Landing-Page/
+
+📌 URL 구조
+| App | URL | HTML File Name | Note |
+| --- | --- | --- |--- |
+| landing-page |'/' | index.html | 홈화면 | 
 ## 7. 개발일정
 ## 8. 참고문헌 및 자료
