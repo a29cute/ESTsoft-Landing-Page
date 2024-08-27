@@ -1,5 +1,5 @@
-import config from "../../apikey.js";
-const { API_KEY } = config;
+// import config from "../../apikey.js";
+// const { API_KEY } = config;
 
 function loadKakaoMapScript(callback) {
     const script = document.createElement('script');
