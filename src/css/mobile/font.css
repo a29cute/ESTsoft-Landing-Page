@@ -1,0 +1,23 @@
+@media (min-width: 390px) and (max-width: 798px) {
+    .font-size-responsive{
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+
+    a {
+        color: #FFFFFF;
+        font-family: 'Pretendard-Bold', sans-serif;
+    }
+}
