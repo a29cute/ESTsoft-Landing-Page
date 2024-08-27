@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    gap: 30px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+section h2, section h3, section h4, section h5 {
+    margin: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
