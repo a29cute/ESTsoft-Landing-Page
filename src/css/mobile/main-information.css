@@ -1,0 +1,16 @@
+@media (min-width: 390px) and (max-width: 798px) {
+    .home-main-information-desc{
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+
+    }
+
+    .home-main-information-text {
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+    }
+}
