@@ -1,6 +1,8 @@
 # ESTsoft 부트캠프 프로젝트➰😺
 ## 1️⃣ 프로젝트 개요
 ### 🚩 목표
++ 웹 페이지의 마크업 구조를 분석하고 HTML과 CSS로 스타일과 디자인을 적용하여 랜딩 페이지 콘텐츠를 구현할 수 있다.
++ 자바스크립트를 활용하여 사용자와 상호작용할 수 있는 동적 웹 페이지를 개발할 수 있다.
 ### 📒 기능
 ## 2️⃣ 요구사항정의서 📌 [피그마 링크](https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-%EC%98%A4%EB%A5%B4%EB%AF%B8(BE)_HTML%2FCSS%2FJS?node-id=104924-12&t=0vh0s3ZVXz8C0ZwI-0) 
   
