@@ -9,6 +9,7 @@ footer {
 .footer-logo{
     width: 226px;
     height: 70px;
+    cursor: pointer;
 }
 .footer-nav-mobile-list{
     display: flex;
@@ -40,6 +41,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .sns_icon_image{
