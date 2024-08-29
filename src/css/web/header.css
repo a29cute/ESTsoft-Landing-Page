@@ -14,7 +14,7 @@ header {
 .header-logo{
     width: 130px;
     height: 40px;
-
+    cursor: pointer;
 }
 
 .header-container{
