@@ -45,5 +45,8 @@ footer {
 }
 
 .sns_icon_image{
-    scale: 90%
+    scale: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
