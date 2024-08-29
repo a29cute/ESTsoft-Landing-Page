@@ -28,11 +28,6 @@
     border-radius: 12px;
 }
 
-.map_icon_minus{
-    background: url("image/minus.png") center/cover no-repeat;
-    scale: 0.9;
-}
-
 .map-wrap {position:relative;overflow:hidden;width:100%;}
 .radius_border{border-radius:5px;box-shadow: 0 2px #80808033;}
 .custom_typecontrol {position:absolute;top:60px;right:10px;overflow:hidden;width:130px;height:30px;margin:0;padding:0;z-index:1;font-size:12px; background-color: white}
