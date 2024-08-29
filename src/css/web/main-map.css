@@ -48,3 +48,23 @@
 .custom_mapcontrol {position:absolute;top:250px;right:10px;width:40px;height:40px;overflow:hidden;z-index:1;background-color:#FFFFFF;}
 .custom_markercontrol span {display:flex;width:40px;height:100%;text-align:center;cursor:pointer;justify-content:center;align-items: center}
 .custom_markercontrol {position:absolute;top:200px;right:10px;width:40px;height:40px;overflow:hidden;z-index:1;background-color:#FFFFFF;}
+
+
+.map_icon_level{
+    background: url("/image/level.png") center/cover no-repeat;
+    scale: 0.6;
+}
+
+.map_icon_reset{
+    background: url("/image/reset.png") center/cover no-repeat;
+    scale: 0.6;
+}
+.map_icon_plus{
+    background: url("/image/plus.png") center/cover no-repeat;
+    scale: 0.9;
+}
+
+.map_icon_minus{
+    background: url("/image/minus.png") center/cover no-repeat;
+    scale: 0.9;
+}

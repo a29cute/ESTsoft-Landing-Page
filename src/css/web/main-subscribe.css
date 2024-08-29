@@ -69,3 +69,10 @@ input[type="email"] {
     height: 340px;
     margin-top: 180px;
 }
+
+.subscribe-form::before{
+    background-image: url("/image/mail.svg");
+}
+.home-main-subscribe{
+    background: url("/image/img_7.svg") center/cover no-repeat;
+}
