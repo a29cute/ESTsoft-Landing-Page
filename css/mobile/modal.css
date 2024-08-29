@@ -37,5 +37,7 @@
         margin: 24px 0 10px 0;
     }
 
-
+    .modal-content-wrap {
+        background-image: url("../../images/modal-background-mobile.svg");
+    }
 }

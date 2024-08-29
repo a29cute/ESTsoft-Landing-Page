@@ -35,3 +35,15 @@
 .scrollTopButton::before {
     content: '';
 }
+
+.scrollTopButton.inactive {
+    background-image: url("../../images/scoll-btn-Y.svg");
+}
+
+.scrollTopButton:hover {
+    background-image: url("../../images/scoll-btn-Y.svg");
+}
+.scrollTopButton {
+
+    background-image: url("../../images/scoll-btn-N.svg");
+}
