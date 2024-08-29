@@ -72,3 +72,8 @@ nav, input {
 .text-color-orange{
     color: #D97652;
 }
+
+.text-color-grey{
+    color: #767676;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
