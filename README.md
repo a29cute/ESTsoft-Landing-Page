@@ -167,7 +167,7 @@
 ### ◾ 와이어프레임
 | 🖥️ WEB | 📱 MOBILE |
 | --- | --- |
-|![PC](https://github.com/user-attachments/assets/46381304-ab64-4983-af8a-078beeab37ac)|![Mobile](https://github.com/user-attachments/assets/060c86a7-ef40-447e-8b84-3318dd9160b4)| 
+| ![와이어프레임PC](https://github.com/user-attachments/assets/060713cf-dc15-4a01-a5f7-89c3a83a48e4) | ![와이어프레임Mobile](https://github.com/user-attachments/assets/cf171e41-5f29-471d-a4dd-7c7d503cedf7) | 
 
 ### ◾ 화면 마크업 구조분석
 ![구조분석](https://github.com/user-attachments/assets/e1532859-dac2-4435-b69a-72e49c416b2e)
